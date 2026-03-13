@@ -10,6 +10,7 @@ plotly
 
 # Machine Learning y Modelado
 scikit-learn
+statsmodels
 xgboost
 
 # Conectividad y Bases de Datos
