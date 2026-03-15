@@ -1,9 +1,9 @@
-# 🌌 NEON GRID: Análisis del Embudo de Conversión y Pruebas A/A/B 🌌
+# 🌌 NEON GRID: Análisis del Embudo de Conversión y Pruebas A/B 🌌
 Este proyecto decodifica el comportamiento del usuario y la efectividad del embudo de conversión dentro de nuestra plataforma digital. Para lograrlo, procesamos un dataset masivo de eventos, aislando la señal del ruido a partir del 31 de julio de 2019, fecha en la que los flujos de datos mostraron un pico de actividad significativa (con una pérdida de datos casi nula del 0.32%).
 
 El análisis divide a los usuarios en tres sectores de la red: dos grupos de control (Protocolos 246 y 247) y un grupo de prueba (Protocolo 248).
 
-🕹️ El Embudo de Neón (Secuencia de Eventos)
+🕹️ ## El Embudo de Neón (Secuencia de Eventos)
 Al rastrear la huella digital de los usuarios ("total_events"), mapeamos la ruta principal del sistema:
 
 * MainScreenAppear (Pantalla de inicio)
@@ -16,14 +16,14 @@ Al rastrear la huella digital de los usuarios ("total_events"), mapeamos la ruta
 
 * Tutorial (Módulo de asistencia auxiliar)
 
-## 📊 Insights del Sistema
+📊 ## Insights del Sistema
 El punto crítico del sistema se encuentra entre la pantalla principal y las ofertas, conservando solo al 62% de los usuarios. Aquí es donde la interfaz necesita una actualización de hardware/software para captar mejor el interés.
 
 Sobremarcha : Una vez superada la barrera inicial, la retención es de alto rendimiento: 81% avanza de las ofertas al carrito, y un masivo 94.7% completa el pago. El circuito de compra final está hiper-optimizado.
 
 Módulo de tutorial inactivo: Solo el 4.2% de los usuarios activa el tutorial, sugiriendo que la navegación es intuitiva o que el módulo está oculto en la interfaz. La distribución general muestra que la mayoría de los dispositivos registran un número bajo de eventos.
 
-##🧬 Diagnóstico estadístico (A/A/B Testing)
+🧬 ## Diagnóstico estadístico (A/A/B Testing)
 Se ejecutaron pruebas de proporciones para evaluar el impacto de las variaciones en los grupos experimentales.
 
 Hipótesis Nula (H0): Los algoritmos de los grupos operan sin diferencias estadísticas.
@@ -34,7 +34,7 @@ Resultado Final: Los datos confirmaron la hipótesis nula (p-valor > alfa). No s
 
 
 
-### 📊 Gráficos generados
+📊 ### Gráficos generados
 
 <table align="center">
   <tr>
@@ -61,7 +61,7 @@ Resultado Final: Los datos confirmaron la hipótesis nula (p-valor > alfa). No s
 
 ---
 
-### 📺 Full Presentation
+📺 ### Full Presentation
 
 A continuación, puedes acceder a la presentación completa del proyecto. Haz clic en la imagen para abrir el archivo en Google Slides:
 
@@ -82,7 +82,7 @@ This project decodes user behavior and conversion funnel effectiveness within ou
 
 The analysis segments users into three distinct grid sectors: two control groups (Protocols 246 and 247) and one test group (Protocol 248).
 
-🕹️ The Neon Funnel (Event Sequence)
+🕹️ ## The Neon Funnel (Event Sequence)
 By tracking user digital footprints ("total_events"), we successfully mapped the mainframe's core pathway:
 
 * MainScreenAppear
@@ -95,14 +95,14 @@ By tracking user digital footprints ("total_events"), we successfully mapped the
 
 * Tutorial (Auxiliary Support Module)
 
-## 📊 System Insights
+📊 ## System Insights
 Initial Voltage Drop: The critical system bottleneck occurs between the main screen and the offers, retaining only 62% of users. This is where the UI needs a serious visual or structural upgrade to hook users.
 
 End-Circuit Overdrive: Once users pass the initial firewall, retention hits peak performance: 81% advance from offers to the cart, and a massive 94.7% complete the payment. The final checkout loop is hyper-optimized.
 
 Dormant Tutorial Module: Only 4.2% of users jack into the tutorial. This suggests either the UI is inherently intuitive, or the module is hidden deep within the grid. Overall distribution shows most devices register a low frequency of events.
 
-## 🧬 Statistical Diagnostics (A/A/B Testing)
+🧬 ## Statistical Diagnostics (A/A/B Testing)
 Proportion tests were executed to evaluate the impact of the variations across the grid sectors.
 
 Null Hypothesis (H0): The algorithms across all groups operate with no significant statistical difference.
