@@ -32,6 +32,49 @@ Resolución: Para evitar sobrecargar el sistema con falsos positivos (Error Tipo
 
 Resultado Final: Los datos confirmaron la hipótesis nula (p-valor > alfa). No se encontraron diferencias estadísticas significativas entre los grupos de control, ni entre los grupos de control y el de prueba en ninguna de las etapas.
 
+
+
+### 📊 Gráficos generados
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/Alop89/Projects_portfolio/blob/main/ab_test/reports/figures/distribucion_eventos.png?raw=true" width="400px"/>
+      <br /><b>Distribución de eventos por usuarios</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/Alop89/Projects_portfolio/blob/main/ab_test/reports/figures/eventos_usuarios_unicos.png?raw=true" width="400px"/>
+      <br /><b>Eventos por usuarios únicos</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/Alop89/Projects_portfolio/blob/main/ab_test/reports/figures/timeline.png?raw=true" width="400px"/>
+      <br /><b>Evolución de datos respecto al tiempo</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/Alop89/Projects_portfolio/blob/main/ab_test/reports/figures/embudo.png?raw=true" width="400px"/>
+      <br /><b>Embudo de eventos</b>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 📺 Full Presentation
+
+A continuación, puedes acceder a la presentación completa del proyecto. Haz clic en la imagen para abrir el archivo en Google Slides:
+
+<p align="center">
+  <a href="https://docs.google.com/presentation/d/1sjTefAV15vfuypZ0-MEgZdVjGfL6E-JTydEaufR-NyQ/edit?usp=sharing">
+    <img src="https://github.com/Alop89/Projects_portfolio/blob/main/ab_test/reports/figures/presentation.png?raw=true" width="700px" alt="Presentation Cover">
+  </a>
+</p>
+
+[👉 Click here to view the presentation](https://docs.google.com/presentation/d/1sjTefAV15vfuypZ0-MEgZdVjGfL6E-JTydEaufR-NyQ/edit?usp=sharing)
+
+
+
 ## 🇺🇸 English Version
 # 🌌 NEON GRID: Conversion Funnel & A/A/B Testing Analysis 🌌
 Booting up analysis sequence...
@@ -67,3 +110,4 @@ Null Hypothesis (H0): The algorithms across all groups operate with no significa
 Resolution: To prevent system overload from false positives (Type I Error) during multiple comparisons, we calibrated the matrix using the Bonferroni Correction, hardcoding the significance level to 0.0083.
 
 Final Output: The data streams confirmed the null hypothesis (p-value > alpha). No statistically significant differences were found between the control groups, nor between the control and test groups at any stage of the funnel.
+
