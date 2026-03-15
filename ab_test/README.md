@@ -1,21 +1,69 @@
-# A-B_test
+# 🌌 NEON GRID: Análisis del Embudo de Conversión y Pruebas A/A/B 🌌
+Este proyecto decodifica el comportamiento del usuario y la efectividad del embudo de conversión dentro de nuestra plataforma digital. Para lograrlo, procesamos un dataset masivo de eventos, aislando la señal del ruido a partir del 31 de julio de 2019, fecha en la que los flujos de datos mostraron un pico de actividad significativa (con una pérdida de datos casi nula del 0.32%).
 
-## Introduction
-The present analysis focuses on understanding user behavior and evaluating the effectiveness of the conversion funnel on a specific platform. The dataset analyzed contains information about user events, divided into three groups: two control groups and one test group. By examining the behavior of these groups, the study aimed to uncover insights into user experience and engagement. To ensure accuracy, the dataset was loaded using the `sep = "\t"` argument for precise value separation, and column names were reformatted to follow the "snake_case" standard for improved readability and consistency. After verifying data integrity, the dataset contained 244,126 records with no null values. Following the removal of 413 duplicate entries, the final dataset comprised 243,713 clean records. Additionally, the timestamp column was processed to generate two new columns for full date-time and date-only formats, enabling more detailed temporal analysis.
+El análisis divide a los usuarios en tres sectores de la red: dos grupos de control (Protocolos 246 y 247) y un grupo de prueba (Protocolo 248).
 
-## Objective
-The primary objectives of the analysis were to examine the user conversion funnel and determine the sequence of key events in the purchasing process, evaluate user retention rates, and identify areas with significant drop-offs. Another objective was to investigate differences between groups using statistical hypothesis testing while applying corrections for multiple comparisons. Lastly, the study sought to assess temporal trends in user events and explore patterns over time.
+🕹️ El Embudo de Neón (Secuencia de Eventos)
+Al rastrear la huella digital de los usuarios ("total_events"), mapeamos la ruta principal del sistema:
 
-## Highlights of the analysis
-The conversion funnel analysis revealed the final sequence of key events as follows: MainScreenAppear, OffersScreenAppear, CartScreenAppear, PaymentScreenSuccessful, and Tutorial. The "Tutorial" event was identified as an assistance feature for users experiencing challenges in earlier steps of the process. Retention rates were high in the latter stages of the funnel, with 81% of users advancing from OffersScreenAppear to CartScreenAppear and 94.7% proceeding to PaymentScreenSuccessful. However, the most significant drop-off occurred between MainScreenAppear and OffersScreenAppear, where only 62% of users advanced. This suggests that improvements to the main screen and the initial offer presentation could enhance user engagement and progression through the funnel.
+* MainScreenAppear (Pantalla de inicio)
 
-![event_per_user](https://github.com/Alop89/A-B_test/blob/main/images/event_per_user.png)
-![data_time](https://github.com/Alop89/A-B_test/blob/main/images/data_time.png)
+* OffersScreenAppear (Carga de ofertas)
 
-The analysis of temporal trends revealed a significant increase in user events starting on July 31, 2019, serving as a critical point for further investigation. Statistical hypothesis testing showed no significant differences between the control groups or between the control and test groups. To ensure robust findings, the Bonferroni correction was applied, adjusting the significance level to 0.0083 to minimize Type I errors. 
+* CartScreenAppear (Terminal del carrito)
 
-An additional finding was that only 4.2% of users utilized the tutorial. This low usage rate may indicate that the tutorial is either underutilized or poorly positioned. It could also reflect that users find the platform intuitive and do not require further assistance, or that the tutorial's design and accessibility need improvements.
+* PaymentScreenSuccessful (Transacción exitosa)
 
-![a_b_test](https://github.com/Alop89/A-B_test/blob/main/images/a_b_test.png)
+* Tutorial (Módulo de asistencia auxiliar)
 
-In conclusion, the analysis highlights the platform's strengths in retaining users during the latter stages of the funnel while identifying areas for improvement in the initial engagement phase. By addressing these insights, the platform can enhance user experience and optimize conversion rates effectively.
+## 📊 Insights del Sistema
+El punto crítico del sistema se encuentra entre la pantalla principal y las ofertas, conservando solo al 62% de los usuarios. Aquí es donde la interfaz necesita una actualización de hardware/software para captar mejor el interés.
+
+Sobremarcha : Una vez superada la barrera inicial, la retención es de alto rendimiento: 81% avanza de las ofertas al carrito, y un masivo 94.7% completa el pago. El circuito de compra final está hiper-optimizado.
+
+Módulo de tutorial inactivo: Solo el 4.2% de los usuarios activa el tutorial, sugiriendo que la navegación es intuitiva o que el módulo está oculto en la interfaz. La distribución general muestra que la mayoría de los dispositivos registran un número bajo de eventos.
+
+##🧬 Diagnóstico estadístico (A/A/B Testing)
+Se ejecutaron pruebas de proporciones para evaluar el impacto de las variaciones en los grupos experimentales.
+
+Hipótesis Nula (H0): Los algoritmos de los grupos operan sin diferencias estadísticas.
+
+Resolución: Para evitar sobrecargar el sistema con falsos positivos (Error Tipo I) al realizar múltiples comparaciones, calibramos el análisis con la Corrección de Bonferroni, ajustando el nivel de significancia a 0.0083.
+
+Resultado Final: Los datos confirmaron la hipótesis nula (p-valor > alfa). No se encontraron diferencias estadísticas significativas entre los grupos de control, ni entre los grupos de control y el de prueba en ninguna de las etapas.
+
+## 🇺🇸 English Version
+# 🌌 NEON GRID: Conversion Funnel & A/A/B Testing Analysis 🌌
+Booting up analysis sequence...
+This project decodes user behavior and conversion funnel effectiveness within our digital platform. To achieve this, we processed a massive event dataset, isolating the signal from the noise starting July 31, 2019, a timestamp that marked a massive surge in data streams (maintaining optimal data integrity with only 0.32% data loss).
+
+The analysis segments users into three distinct grid sectors: two control groups (Protocols 246 and 247) and one test group (Protocol 248).
+
+🕹️ The Neon Funnel (Event Sequence)
+By tracking user digital footprints ("total_events"), we successfully mapped the mainframe's core pathway:
+
+* MainScreenAppear
+
+* OffersScreenAppear
+
+* CartScreenAppear
+
+* PaymentScreenSuccessful
+
+* Tutorial (Auxiliary Support Module)
+
+## 📊 System Insights
+Initial Voltage Drop: The critical system bottleneck occurs between the main screen and the offers, retaining only 62% of users. This is where the UI needs a serious visual or structural upgrade to hook users.
+
+End-Circuit Overdrive: Once users pass the initial firewall, retention hits peak performance: 81% advance from offers to the cart, and a massive 94.7% complete the payment. The final checkout loop is hyper-optimized.
+
+Dormant Tutorial Module: Only 4.2% of users jack into the tutorial. This suggests either the UI is inherently intuitive, or the module is hidden deep within the grid. Overall distribution shows most devices register a low frequency of events.
+
+## 🧬 Statistical Diagnostics (A/A/B Testing)
+Proportion tests were executed to evaluate the impact of the variations across the grid sectors.
+
+Null Hypothesis (H0): The algorithms across all groups operate with no significant statistical difference.
+
+Resolution: To prevent system overload from false positives (Type I Error) during multiple comparisons, we calibrated the matrix using the Bonferroni Correction, hardcoding the significance level to 0.0083.
+
+Final Output: The data streams confirmed the null hypothesis (p-value > alpha). No statistically significant differences were found between the control groups, nor between the control and test groups at any stage of the funnel.
