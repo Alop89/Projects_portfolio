@@ -37,9 +37,3 @@ This portfolio is a **Living Entity**. I am constantly updating scripts, optimiz
 ### 🎸 LET'S SYNC UP
 
 The grid is better when we're connected. Reach out and let's build something legendary.
-
-
-
-
-
-**¿Qué te parece este estilo? Si quieres, puedo ayudarte a redactar los "System Logs" (descripciones) de tus proyectos actuales para que encajen perfecto con esta temática.**
