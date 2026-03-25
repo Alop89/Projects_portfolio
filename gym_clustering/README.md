@@ -1,18 +1,19 @@
-# Gym_churn_prediction 📊
+### 🔮🕹️ Gym Customer Churn Prediction: A Data-Driven Approach to Retention
+In the competitive fitness industry, customer retention is vital for long-term success. Recognizing this, Model Fitness embarked on a project to leverage data analytics and machine learning to predict and prevent customer churn, particularly focusing on members who "fade away" without explicitly canceling their memberships.
 
-In the highly competitive world of gyms, keeping customers satisfied and loyal is a critical factor for success. Recognizing this challenge, Model Fitness has embarked on an ambitious initiative: leveraging the power of data analytics to predict and prevent customer churn.
+**Project Objectives:**
+The goal of this project is to create a data-driven retention strategy by analyzing customer behavior, developing predictive models, and identifying actionable insights. This initiative aims to improve customer experience, optimize marketing efforts, and foster sustainable growth.
 
-Traditionally, measuring customer churn in a gym relied on simple metrics such as membership cancellations or decreased visit frequency. However, this view is limited. Many customers "fade away" silently, without taking explicit cancellation actions.
+**Key Highlights:**
+* **Data Analysis:** Exploratory data analysis (EDA) revealed insights through heatmaps and dendrograms, identifying clusters and correlations between key variables.
+* **Machine Learning Models:** Logistic Regression and Random Forest models were implemented. Logistic Regression demonstrated superior performance across metrics like Accuracy (0.93), F1 Score (0.86), and AUC-ROC (0.97).
+* **Business Recommendations:** Tailored strategies were suggested for different customer clusters, such as flexible memberships, rewards for milestones, and motivational campaigns.
 
-Our primary objective is to develop a data-driven customer retention strategy for Model Fitness. Through this project, we aim to provide the company with a valuable tool to analyze customer behavior, optimize marketing efforts, and improve the overall customer experience, leading to increased customer retention and sustainable business growth.
+**Outcomes:**
+This project showcases the power of data in enhancing customer experience and retention. By predicting potential churners and addressing their unique needs, Model Fitness is equipped to foster deeper customer connections.
 
-# Conclusions
-Some Strategies to Improve Customer Loyalty
-* Cluster 0: It is recommended to offer rewards for reaching attendance milestones, such as free classes or discounts on gym products (to increase their average spend), as well as organize exclusive events. It is also suggested to maintain communication that highlights their progress.
-* Cluster 1: Offer discounts and rewards to promote the renewal of their contract before it expires, promote packages that fit their short-term goals, and implement promotions to recommend the gym to others.
-* Cluster 2: Introduce flexible memberships, include classes that may be more attractive to this group of customers. Offer close follow-up to review their satisfaction, as well as send motivational messages to generate greater attendance.
-* Cluster 3: Free trials of classes of their interest can be offered to help them find something they like, create an easy-to-follow introductory program with trainers who can guide new users to increase support for new users.
-* Cluster 4: Organize activities to foster a sense of belonging and community, incentivize attendance at classes by offering some benefits to increase the perceived value of the membership.
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="gym" style="width: 300px; height: 300px; object-fit: cover; border-radius: 10px;">
-</div>
+<br>
+
+<img src="https://img.shields.io/badge/-Market%20Segmentation-FF007F?style=flat&logo=googleanalytics&logoColor=white" alt="Market Segmentation" /> <img src="https://img.shields.io/badge/-Relationship%20Marketing-6A0DAD?style=flat&logo=handshake&logoColor=white" alt="Relationship Marketing" /> <img src="https://img.shields.io/badge/-Predictive%20Analytics-00E5FF?style=flat&logo=datadog&logoColor=black" alt="Predictive Analytics" /> <img src="https://img.shields.io/badge/-Machine%20Learning-0B0C10?style=flat&logo=tensorflow&logoColor=FF007F" alt="Machine Learning" /> <img src="https://img.shields.io/badge/-Python-0B0C10?style=flat&logo=python&logoColor=00E5FF" alt="Python Badge" />
+
+> 🔗 **Explore the full project:** [Initialize Repository](https://github.com/Alop89/Gym_churn_prediction)
