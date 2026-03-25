@@ -3,7 +3,7 @@ Este proyecto decodifica el comportamiento del usuario y la efectividad del embu
 
 El análisis divide a los usuarios en tres sectores de la red: dos grupos de control (Protocolos 246 y 247) y un grupo de prueba (Protocolo 248).
 
-🕹️ ## El embudo (secuencia de eventos)
+## 🕹️ El embudo (secuencia de eventos)
 
 Al rastrear la huella digital de los usuarios ("total_events"), mapeamos la ruta principal del sistema:
 
