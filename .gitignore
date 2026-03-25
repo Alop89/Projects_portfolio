@@ -6,6 +6,7 @@
 *.pkl
 *.pdf
 *.docx
+*.pbix
 data/
 
 # Entornos y Seguridad
