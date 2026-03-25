@@ -1,4 +1,4 @@
-# 🌌 NEON GRID: Análisis del Embudo de Conversión y Pruebas A/B
+# 🌌 NEON GRID: Análisis del embudo de conversión y pruebas A/B
 Este proyecto decodifica el comportamiento del usuario y la efectividad del embudo de conversión dentro de una plataforma digital. Para lograrlo, procesamos un dataset de eventos, aislando la señal del ruido a partir del 31 de julio de 2019, fecha en la que los flujos de datos mostraron un pico de actividad significativa (con una pérdida de datos casi nula del 0.32%).
 
 El análisis divide a los usuarios en tres sectores de la red: dos grupos de control (Protocolos 246 y 247) y un grupo de prueba (Protocolo 248).
@@ -88,7 +88,7 @@ También está disponible un dashboard de prueba que contien los datos usados pa
 
 
 ## 🇺🇸 English Version
-# 🌌 NEON GRID: Conversion Funnel & A/A/B Testing Analysis 🌌
+# 🌌 NEON GRID: Conversion funnel & A/A/B testing analysis 🌌
 Booting up analysis sequence...
 This project decodes user behavior and conversion funnel effectiveness within our digital platform. To achieve this, we processed a massive event dataset, isolating the signal from the noise starting July 31, 2019, a timestamp that marked a massive surge in data streams (maintaining optimal data integrity with only 0.32% data loss).
 
