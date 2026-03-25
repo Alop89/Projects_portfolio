@@ -1,9 +1,10 @@
 # 🌌 NEON GRID: Análisis del Embudo de Conversión y Pruebas A/B 🌌
-Este proyecto decodifica el comportamiento del usuario y la efectividad del embudo de conversión dentro de nuestra plataforma digital. Para lograrlo, procesamos un dataset masivo de eventos, aislando la señal del ruido a partir del 31 de julio de 2019, fecha en la que los flujos de datos mostraron un pico de actividad significativa (con una pérdida de datos casi nula del 0.32%).
+Este proyecto decodifica el comportamiento del usuario y la efectividad del embudo de conversión dentro de una plataforma digital. Para lograrlo, procesamos un dataset de eventos, aislando la señal del ruido a partir del 31 de julio de 2019, fecha en la que los flujos de datos mostraron un pico de actividad significativa (con una pérdida de datos casi nula del 0.32%).
 
 El análisis divide a los usuarios en tres sectores de la red: dos grupos de control (Protocolos 246 y 247) y un grupo de prueba (Protocolo 248).
 
-🕹️ ## El Embudo de Neón (Secuencia de Eventos)
+🕹️ ## El embudo (secuencia de eventos)
+
 Al rastrear la huella digital de los usuarios ("total_events"), mapeamos la ruta principal del sistema:
 
 * MainScreenAppear (Pantalla de inicio)
@@ -28,7 +29,7 @@ Se ejecutaron pruebas de proporciones para evaluar el impacto de las variaciones
 
 Hipótesis Nula (H0): Los algoritmos de los grupos operan sin diferencias estadísticas.
 
-Resolución: Para evitar sobrecargar el sistema con falsos positivos (Error Tipo I) al realizar múltiples comparaciones, calibramos el análisis con la Corrección de Bonferroni, ajustando el nivel de significancia a 0.0083.
+Resolución: Para evitar sobrecargar el sistema con falsos positivos (Error Tipo I) al realizar múltiples comparaciones, calibramos el análisis con la Corrección de Bonferroni, ajustando el nivel de significancia a 0.05.
 
 Resultado Final: Los datos confirmaron la hipótesis nula (p-valor > alfa). No se encontraron diferencias estadísticas significativas entre los grupos de control, ni entre los grupos de control y el de prueba en ninguna de las etapas.
 
@@ -107,7 +108,7 @@ Proportion tests were executed to evaluate the impact of the variations across t
 
 Null Hypothesis (H0): The algorithms across all groups operate with no significant statistical difference.
 
-Resolution: To prevent system overload from false positives (Type I Error) during multiple comparisons, we calibrated the matrix using the Bonferroni Correction, hardcoding the significance level to 0.0083.
+Resolution: To prevent system overload from false positives (Type I Error) during multiple comparisons, we calibrated the matrix using the Bonferroni Correction, hardcoding the significance level to 0.05.
 
 Final Output: The data streams confirmed the null hypothesis (p-value > alpha). No statistically significant differences were found between the control groups, nor between the control and test groups at any stage of the funnel.
 
