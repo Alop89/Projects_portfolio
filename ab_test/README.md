@@ -75,6 +75,16 @@ A continuación, puedes acceder a la presentación completa del proyecto. Haz cl
 [👉 Click here to view the presentation](https://docs.google.com/presentation/d/1sjTefAV15vfuypZ0-MEgZdVjGfL6E-JTydEaufR-NyQ/edit?usp=sharing)
 
 
+También está disponible un dashboard de prueba que contien los datos usados para el proyecto:
+
+<p align="center">
+  <a href="https://docs.google.com/presentation/d/1sjTefAV15vfuypZ0-MEgZdVjGfL6E-JTydEaufR-NyQ/edit?usp=sharing">
+    <img src="https://github.com/Alop89/Projects_portfolio/blob/main/ab_test/reports/figures/dash_v1.0.png" width="700px" alt="Presentation Cover">
+  </a>
+</p>
+
+
+
 
 ## 🇺🇸 English Version
 # 🌌 NEON GRID: Conversion Funnel & A/A/B Testing Analysis 🌌
