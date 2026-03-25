@@ -18,11 +18,11 @@ Al rastrear la huella digital de los usuarios ("total_events"), mapeamos la ruta
 * Tutorial (Módulo de asistencia auxiliar)
 
 ## 📊 Insights del Sistema
-El punto crítico del sistema se encuentra entre la pantalla principal y las ofertas, conservando solo al 62% de los usuarios. Aquí es donde la interfaz necesita una actualización de hardware/software para captar mejor el interés.
+* El punto crítico del sistema se encuentra entre la pantalla principal y las ofertas, conservando solo al 62% de los usuarios. Aquí es donde la interfaz necesita una actualización de hardware/software para captar mejor el interés.
 
-Sobremarcha : Una vez superada la barrera inicial, la retención es de alto rendimiento: 81% avanza de las ofertas al carrito, y un masivo 94.7% completa el pago. El circuito de compra final está hiper-optimizado.
+* Sobremarcha : Una vez superada la barrera inicial, la retención es de alto rendimiento: 81% avanza de las ofertas al carrito, y un masivo 94.7% completa el pago. El circuito de compra final está hiper-optimizado.
 
-Módulo de tutorial inactivo: Solo el 4.2% de los usuarios activa el tutorial, sugiriendo que la navegación es intuitiva o que el módulo está oculto en la interfaz. La distribución general muestra que la mayoría de los dispositivos registran un número bajo de eventos.
+* Módulo de tutorial inactivo: Solo el 4.2% de los usuarios activa el tutorial, sugiriendo que la navegación es intuitiva o que el módulo está oculto en la interfaz. La distribución general muestra que la mayoría de los dispositivos registran un número bajo de eventos.
 
 ## 🧬 Diagnóstico estadístico (A/A/B Testing)
 Se ejecutaron pruebas de proporciones para evaluar el impacto de las variaciones en los grupos experimentales.
