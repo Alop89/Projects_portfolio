@@ -88,7 +88,7 @@ También está disponible un dashboard de prueba que contien los datos usados pa
 
 
 ## 🇺🇸 English Version
-# 🌌 NEON GRID: Conversion funnel & A/A/B testing analysis 🌌
+# 🌌 NEON GRID: Conversion funnel & A/B testing analysis 🌌
 Booting up analysis sequence...
 This project decodes user behavior and conversion funnel effectiveness within our digital platform. To achieve this, we processed a massive event dataset, isolating the signal from the noise starting July 31, 2019, a timestamp that marked a massive surge in data streams (maintaining optimal data integrity with only 0.32% data loss).
 
