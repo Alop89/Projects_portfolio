@@ -72,7 +72,7 @@ A continuación, puedes acceder a la presentación completa del proyecto. Haz cl
   </a>
 </p>
 
-[👉 Click here to view the presentation](https://docs.google.com/presentation/d/1sjTefAV15vfuypZ0-MEgZdVjGfL6E-JTydEaufR-NyQ/edit?usp=sharing)
+
 
 
 También está disponible un dashboard de prueba que contien los datos usados para el proyecto:
@@ -83,6 +83,7 @@ También está disponible un dashboard de prueba que contien los datos usados pa
   </a>
 </p>
 
+[👉 Click here to dowload the dahsboard](https://1drv.ms/u/c/13cfd995d9a175b3/IQDX5SMscRdBT5OC0mDlW6bBATg6pH5OdcTqUixVBvxHMGI?e=aKuHBs)
 
 
 
