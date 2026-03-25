@@ -24,7 +24,7 @@ Al rastrear la huella digital de los usuarios ("total_events"), mapeamos la ruta
 
 * Módulo de tutorial inactivo: Solo el 4.2% de los usuarios activa el tutorial, sugiriendo que la navegación es intuitiva o que el módulo está oculto en la interfaz. La distribución general muestra que la mayoría de los dispositivos registran un número bajo de eventos.
 
-## 🧬 Diagnóstico estadístico (A/A/B Testing)
+## 🧬 Diagnóstico estadístico (A/B Testing)
 Se ejecutaron pruebas de proporciones para evaluar el impacto de las variaciones en los grupos experimentales.
 
 Hipótesis Nula (H0): Los algoritmos de los grupos operan sin diferencias estadísticas.
@@ -114,7 +114,7 @@ End-Circuit Overdrive: Once users pass the initial firewall, retention hits peak
 
 Dormant Tutorial Module: Only 4.2% of users jack into the tutorial. This suggests either the UI is inherently intuitive, or the module is hidden deep within the grid. Overall distribution shows most devices register a low frequency of events.
 
-## 🧬 Statistical Diagnostics (A/A/B Testing)
+## 🧬 Statistical Diagnostics (A/B Testing)
 Proportion tests were executed to evaluate the impact of the variations across the grid sectors.
 
 Null Hypothesis (H0): The algorithms across all groups operate with no significant statistical difference.
