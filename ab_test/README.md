@@ -62,7 +62,7 @@ Resultado Final: Los datos confirmaron la hipótesis nula (p-valor > alfa). No s
 
 ---
 
-###📺 Full Presentation
+### 📺 Full Presentation
 
 A continuación, puedes acceder a la presentación completa del proyecto. Haz clic en la imagen para abrir el archivo en Google Slides:
 
