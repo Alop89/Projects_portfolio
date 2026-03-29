@@ -1,4 +1,4 @@
-# 🌌 NEON GRID: Análisis del Embudo de Conversión y Pruebas A/B
+# 🌌 NEON GRID: Análisis del embudo de conversión y pruebas A/B
 Este proyecto decodifica el comportamiento del usuario y la efectividad del embudo de conversión dentro de una plataforma digital. Para lograrlo, procesamos un dataset de eventos, aislando la señal del ruido a partir del 31 de julio de 2019, fecha en la que los flujos de datos mostraron un pico de actividad significativa (con una pérdida de datos casi nula del 0.32%).
 
 El análisis divide a los usuarios en tres sectores de la red: dos grupos de control (Protocolos 246 y 247) y un grupo de prueba (Protocolo 248).
@@ -18,13 +18,13 @@ Al rastrear la huella digital de los usuarios ("total_events"), mapeamos la ruta
 * Tutorial (Módulo de asistencia auxiliar)
 
 ## 📊 Insights del Sistema
-El punto crítico del sistema se encuentra entre la pantalla principal y las ofertas, conservando solo al 62% de los usuarios. Aquí es donde la interfaz necesita una actualización de hardware/software para captar mejor el interés.
+* El punto crítico del sistema se encuentra entre la pantalla principal y las ofertas, conservando solo al 62% de los usuarios. Aquí es donde la interfaz necesita una actualización de hardware/software para captar mejor el interés.
 
-Sobremarcha : Una vez superada la barrera inicial, la retención es de alto rendimiento: 81% avanza de las ofertas al carrito, y un masivo 94.7% completa el pago. El circuito de compra final está hiper-optimizado.
+* Sobremarcha : Una vez superada la barrera inicial, la retención es de alto rendimiento: 81% avanza de las ofertas al carrito, y un masivo 94.7% completa el pago. El circuito de compra final está hiper-optimizado.
 
-Módulo de tutorial inactivo: Solo el 4.2% de los usuarios activa el tutorial, sugiriendo que la navegación es intuitiva o que el módulo está oculto en la interfaz. La distribución general muestra que la mayoría de los dispositivos registran un número bajo de eventos.
+* Módulo de tutorial inactivo: Solo el 4.2% de los usuarios activa el tutorial, sugiriendo que la navegación es intuitiva o que el módulo está oculto en la interfaz. La distribución general muestra que la mayoría de los dispositivos registran un número bajo de eventos.
 
-## 🧬 Diagnóstico estadístico (A/A/B Testing)
+## 🧬 Diagnóstico estadístico (A/B Testing)
 Se ejecutaron pruebas de proporciones para evaluar el impacto de las variaciones en los grupos experimentales.
 
 Hipótesis Nula (H0): Los algoritmos de los grupos operan sin diferencias estadísticas.
@@ -72,12 +72,23 @@ A continuación, puedes acceder a la presentación completa del proyecto. Haz cl
   </a>
 </p>
 
-[👉 Click here to view the presentation](https://docs.google.com/presentation/d/1sjTefAV15vfuypZ0-MEgZdVjGfL6E-JTydEaufR-NyQ/edit?usp=sharing)
+[👉 Click here to view or download the presentation](https://docs.google.com/presentation/d/1sjTefAV15vfuypZ0-MEgZdVjGfL6E-JTydEaufR-NyQ/edit?usp=sharing)
+
+
+También está disponible un dashboard de prueba que contien los datos usados para el proyecto:
+
+<p align="center">
+  <a href="https://docs.google.com/presentation/d/1sjTefAV15vfuypZ0-MEgZdVjGfL6E-JTydEaufR-NyQ/edit?usp=sharing">
+    <img src="https://github.com/Alop89/Projects_portfolio/blob/main/ab_test/reports/figures/dash_v1.0.png" width="700px" alt="Presentation Cover">
+  </a>
+</p>
+
+[👉 Click here to download the dahsboard](https://1drv.ms/u/c/13cfd995d9a175b3/IQDX5SMscRdBT5OC0mDlW6bBATg6pH5OdcTqUixVBvxHMGI?e=aKuHBs)
 
 
 
 ## 🇺🇸 English Version
-# 🌌 NEON GRID: Conversion Funnel & A/A/B Testing Analysis 🌌
+# 🌌 NEON GRID: Conversion funnel & A/B testing analysis 🌌
 Booting up analysis sequence...
 This project decodes user behavior and conversion funnel effectiveness within our digital platform. To achieve this, we processed a massive event dataset, isolating the signal from the noise starting July 31, 2019, a timestamp that marked a massive surge in data streams (maintaining optimal data integrity with only 0.32% data loss).
 
@@ -103,7 +114,7 @@ End-Circuit Overdrive: Once users pass the initial firewall, retention hits peak
 
 Dormant Tutorial Module: Only 4.2% of users jack into the tutorial. This suggests either the UI is inherently intuitive, or the module is hidden deep within the grid. Overall distribution shows most devices register a low frequency of events.
 
-## 🧬 Statistical Diagnostics (A/A/B Testing)
+## 🧬 Statistical Diagnostics (A/B Testing)
 Proportion tests were executed to evaluate the impact of the variations across the grid sectors.
 
 Null Hypothesis (H0): The algorithms across all groups operate with no significant statistical difference.
