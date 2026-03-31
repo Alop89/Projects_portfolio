@@ -20,9 +20,9 @@ Al rastrear la huella digital de los usuarios ("total_events"), mapeamos la ruta
 ## 📊 Insights del Sistema
 * El punto crítico del sistema se encuentra entre la pantalla principal y las ofertas, conservando solo al 62% de los usuarios. Aquí es donde la interfaz necesita una actualización de hardware/software para captar mejor el interés.
 
-* Sobremarcha : Una vez superada la barrera inicial, la retención es de alto rendimiento: 81% avanza de las ofertas al carrito, y un masivo 94.7% completa el pago. El circuito de compra final está hiper-optimizado.
+* Sobremarcha : Una vez superada la barrera inicial, la retención es de alto rendimiento: 81% avanza de las ofertas al carrito, y un masivo 94.7% completa el pago. El circuito de compra final está optimizado.
 
-* Módulo de tutorial inactivo: Solo el 4.2% de los usuarios activa el tutorial, sugiriendo que la navegación es intuitiva o que el módulo está oculto en la interfaz. La distribución general muestra que la mayoría de los dispositivos registran un número bajo de eventos.
+* Módulo de tutorial inactivo: Solo el 4.2% de los usuarios activa el tutorial, sugiriendo que la navegación es poco intuitiva o que el módulo es de díficil acceso. La distribución general muestra que la mayoría de los dispositivos registran un número bajo de eventos.
 
 ## 🧬 Diagnóstico estadístico (A/B Testing)
 Se ejecutaron pruebas de proporciones para evaluar el impacto de las variaciones en los grupos experimentales.
@@ -110,7 +110,7 @@ By tracking user digital footprints ("total_events"), we successfully mapped the
 ## 📊 System Insights
 Initial Voltage Drop: The critical system bottleneck occurs between the main screen and the offers, retaining only 62% of users. This is where the UI needs a serious visual or structural upgrade to hook users.
 
-End-Circuit Overdrive: Once users pass the initial firewall, retention hits peak performance: 81% advance from offers to the cart, and a massive 94.7% complete the payment. The final checkout loop is hyper-optimized.
+End-Circuit Overdrive: Once users pass the initial firewall, retention hits peak performance: 81% advance from offers to the cart, and a massive 94.7% complete the payment. The final checkout loop is optimized.
 
 Dormant Tutorial Module: Only 4.2% of users jack into the tutorial. This suggests either the UI is inherently intuitive, or the module is hidden deep within the grid. Overall distribution shows most devices register a low frequency of events.
 
