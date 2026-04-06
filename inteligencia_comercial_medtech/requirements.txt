@@ -8,7 +8,8 @@ matplotlib
 seaborn
 plotly
 
-# Machine Learning y Modelado
+# Machine Learning y Modelado estadístico
+scipy
 scikit-learn
 statsmodels
 xgboost
