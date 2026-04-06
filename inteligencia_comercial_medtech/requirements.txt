@@ -1,0 +1,21 @@
+# Análisis de datos y manipulación
+pandas
+numpy
+openpyxl
+
+# Visualización de datos
+matplotlib
+seaborn
+plotly
+
+# Machine Learning y Modelado
+scikit-learn
+statsmodels
+xgboost
+
+# Conectividad y Bases de Datos
+sqlalchemy
+pyodbc
+
+# Motor para Jupyter Notebooks en VS Code
+ipykernel
