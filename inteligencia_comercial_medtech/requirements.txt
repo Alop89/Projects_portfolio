@@ -13,6 +13,7 @@ scipy
 scikit-learn
 statsmodels
 xgboost
+pingouin
 
 # Conectividad y Bases de Datos
 sqlalchemy
