@@ -12,10 +12,10 @@ Pasamos de la generación de datos crudos a la inferencia estadística avanzada 
 
 ### 🛠️ TECH STACK (THE MAINFRAME)
 * **Core:** Python 3.x 🐍
-* **Data Wrangling:** Pandas, NumPy
-* **Estadística Inferencia:** SciPy, Statsmodels, Pingouin (ANOVA, Spearman, Games-Howell)
-* **Visualización:** Seaborn, Matplotlib (Estética customizada)
-* **Time Series:** Statsmodels (Seasonal Decomposition)
+* **Data wrangling:** Pandas, NumPy
+* **Estadística :** SciPy, Statsmodels, Pingouin (ANOVA, Spearman, Games-Howell, Tukey)
+* **Visualización:** Seaborn, Matplotlib (Estética customizada), Plotly.
+* **Time series:** Statsmodels (Seasonal Decomposition)
 
 ---
 
@@ -61,7 +61,7 @@ Pasamos de la generación de datos crudos a la inferencia estadística avanzada 
 ---
 
 ## 🚀 SYSTEM OVERRIDE: NEXT STEPS
-La fase de análisis estadístico está cerrada. El próximo salto en la red es la **Fase de Ingeniería de Datos (ETL)**, donde este conocimiento será inyectado en una base de datos PostgreSQL en la nube (Neon) para alimentar un Dashboard.
+La fase de análisis estadístico está cerrada. El próximo salto en la red es la **Fase de ingeniería de datos (ETL)**, donde este conocimiento será inyectado en una base de datos PostgreSQL en la nube (Neon) para alimentar un Dashboard.
 
 
 
