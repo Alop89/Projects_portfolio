@@ -56,8 +56,7 @@ Pasamos de la generación de datos crudos a la inferencia estadística avanzada 
 
 ![Tendencia de ventas](inteligencia_comercial_medtech/reports/figures/tendencia_.png)
 ![Time series decomposition](inteligencia_comercial_medtech/reports/figures/descomp_demanda.png)
-
-![Tabla de recomendaciones de abastecimiento]()
+![Tabla de recomendaciones de abastecimiento](inteligencia_comercial_medtech/reports/figures/demanda_esperada.png)
 
 ---
 
