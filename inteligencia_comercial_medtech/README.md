@@ -54,7 +54,7 @@ Pasamos de la generación de datos crudos a la inferencia estadística avanzada 
 * **El Insight:** Desarrollamos un motor de recomendaciones de abastecimiento que suma la tendencia, el efecto estacional del mes y un **Stock de Seguridad dinámico** ($2\sigma$ de los residuos del modelo). 
 
 
-![Tendencia de ventas](ihttps://github.com/Alop89/Projects_portfolio/blob/main/inteligencia_comercial_medtech/reports/figures/tendencia_.png)
+![Tendencia de ventas](https://github.com/Alop89/Projects_portfolio/blob/main/inteligencia_comercial_medtech/reports/figures/tendencia_.png)
 ![Time series decomposition](https://github.com/Alop89/Projects_portfolio/blob/main/inteligencia_comercial_medtech/reports/figures/descomp_demanda.png)
 ![Tabla de recomendaciones de abastecimiento](https://github.com/Alop89/Projects_portfolio/blob/main/inteligencia_comercial_medtech/reports/figures/demanda_esperada.png)
 
