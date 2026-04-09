@@ -2,7 +2,7 @@
 > **By ArchData Consulting** 
 
 
-![Banner Principal](inteligencia_comercial_medtech/reports/figures/medtech_banner.png)
+![Banner Principal](https://github.com/Alop89/Projects_portfolio/blob/main/inteligencia_comercial_medtech/reports/figures/medtech_banner.png)
 
 
 ## 💾 PROJECT OVERVIEW
