@@ -7,6 +7,7 @@
 *.pdf
 *.docx
 *.pbix
+*.env
 data/
 
 # Entornos y Seguridad
