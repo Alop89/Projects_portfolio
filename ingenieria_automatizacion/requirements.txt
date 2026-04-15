@@ -14,10 +14,13 @@ scikit-learn
 statsmodels
 xgboost
 pingouin
+watchdog
 
 # Conectividad y Bases de Datos
 sqlalchemy
 pyodbc
+psycopg2-binary
+python-dotenv
 
 # Motor para Jupyter Notebooks en VS Code
 ipykernel
