@@ -1,0 +1,18 @@
+# Datos y Bases de Datos
+*.db
+*.sqlite
+*.csv
+*.xlsx
+*.pkl
+*.pdf
+*.docx
+data/
+
+# Entornos y Seguridad
+venv/
+.env
+.DS_Store
+
+# Notebooks y Python
+__pycache__/
+.ipynb_checkpoints/
