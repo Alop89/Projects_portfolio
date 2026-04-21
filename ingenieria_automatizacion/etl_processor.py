@@ -25,7 +25,7 @@ def process_and_upload(filepath):
         print(f"Archivo cargado correctamente, filas: {len(df)}")
         logging.info(f"Archivo cargado correctamente, filas: {len(df)}")
 
-       
+        df.drop_duplicates(inplace=True)
         df['Date'] = pd.to_datetime(df['Date']).dt.date
 
         seg__map = {
