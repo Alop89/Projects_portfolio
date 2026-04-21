@@ -58,6 +58,18 @@ Pasamos de la generación de datos crudos a la inferencia estadística avanzada 
 ![Time series decomposition](https://github.com/Alop89/Projects_portfolio/blob/main/inteligencia_comercial_medtech/reports/figures/descomp_demanda.png)
 ![Tabla de recomendaciones de abastecimiento](https://github.com/Alop89/Projects_portfolio/blob/main/inteligencia_comercial_medtech/reports/figures/demanda_esperada.png)
 
+
+
+### Tablero dinámico 
+
+Se generó un tablero dinámico que contiene indicadores de rentabilidad, satisfacción del cliente, demanda y recomendaciones de abastecimiento.
+
+En el siguiente link puedes descargar el tablero de prueba:
+
+![Tablero dinámico](https://github.com/Alop89/Projects_portfolio/blob/main/inteligencia_comercial_medtech/reports/figures/medtech.png) 
+
+[Link al tablero de prueba](https://1drv.ms/u/c/13cfd995d9a175b3/IQDfxAisu-CeTIkNg6Epr468AfUpj-43_DJN7b-h-Kul5XQ?e=8sDkKD)
+
 ---
 
 ## 🚀 SYSTEM OVERRIDE: NEXT STEPS
@@ -111,7 +123,7 @@ We transitioned from raw data generation to advanced statistical inference and t
 **Protocol:** Spearman's Rank Correlation ($\rho$).
 
   * **The challenge:** Does higher satisfaction allow for a higher contract ticket in Imaging/Radiology?
-  * **The analysis:** Spearman's correlation ($\rho = 0.07, p = 0.11$) demonstrated that satisfaction does not alter the unit value of contracts (prices are market-anchored). However, density analysis revealed that "High" satisfaction categories concentrate nearly all revenue.
+  * **The analysis:** Spearman's correlation demonstrated that satisfaction does not alter the unit value of contracts (prices are market-anchored). However, density analysis revealed that "High" satisfaction categories concentrate nearly all revenue.
   * **The insight:** Satisfaction is not a *Price Driver*; it is a **Volume Driver**. In HealthTech, post-sale service guarantees Market Share and purchase frequency.
 
 ### 4️⃣ Forecasting and Supply Chain
