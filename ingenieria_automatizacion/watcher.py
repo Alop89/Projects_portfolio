@@ -4,6 +4,7 @@ import logging
 from dotenv import load_dotenv
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
+from etl_processor import process_and_upload
 
 
 # Cargar variables de entorno
@@ -38,8 +39,9 @@ class ERPDataHandler(FileSystemEventHandler):
     def process_file(self, filepath):
         print(f"Procesando archivo a base de datos: {filepath}")
         logging.info(f"Procesando archivo: {filepath}")
-        time.sleep(2)
-        print(f"Simulación completa para {filepath}")
+        process_and_upload(filepath)
+        logging.info(f"Archivo procesado correctamente: {filepath}")
+        print(f"Archivo procesado correctamente: {filepath}")
 
 def start_watcher():
     if not os.path.exists(WATCH_FOLDER):
