@@ -68,7 +68,7 @@ En el siguiente link puedes descargar el tablero de prueba:
 
 ![Tablero dinámico](https://github.com/Alop89/Projects_portfolio/blob/main/inteligencia_comercial_medtech/reports/figures/medtech.png) 
 
-[Link al tablero de prueba](https://1drv.ms/u/c/13cfd995d9a175b3/IQDfxAisu-CeTIkNg6Epr468AfUpj-43_DJN7b-h-Kul5XQ?e=8sDkKD)
+[📊Link de descarga de tablero](https://1drv.ms/u/c/13cfd995d9a175b3/IQDfxAisu-CeTIkNg6Epr468AfUpj-43_DJN7b-h-Kul5XQ?e=8sDkKD)
 
 ---
 

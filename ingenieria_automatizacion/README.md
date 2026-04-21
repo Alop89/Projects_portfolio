@@ -18,7 +18,7 @@ El objetivo fue construir un *pipeline* automatizado (ETL) impulsado por eventos
 
 -----
 
-## 🛤️ LA ARQUITECTURA DEL PIPELINE (Flujo de Datos)
+## 🛤️ LA ARQUITECTURA DEL PIPELINE (flujo de datos)
 
 El sistema fue diseñado para eliminar la intervención humana del proceso de actualización de reportes. El flujo sigue 4 fases críticas:
 
@@ -55,16 +55,11 @@ Con los datos estructurados en la nube, herramientas como **Power BI** simplemen
 
 Construir tuberías digitales bajo esta arquitectura transforma radicalmente la operación de una empresa:
 
-1.  **Reducción de tiempo:** Pasamos de un proceso de cierre mensual de 3 días a una actualización continua en segundos.
+1.  **Reducción de tiempo:** Pasamos de un proceso de cierre mensual de 5 días a una actualización continua.
 2.  **Integridad de los datos:** Al eliminar la manipulación manual de archivos de Excel, se reduce el error humano a cero.
 3.  **Infraestructura ágil:** Usar Neon Tech permite a las empresas tener el poder de bases de datos de nivel corporativo sin los costos de mantenimiento de servidores físicos.
 
 -----
-
-¡Qué onda, Alfredo! Aquí tienes la traducción impecable de tu "motor" de datos. Mantuve toda la jerga técnica en inglés (*event-driven*, *zero-click*, *upsert*) para que cualquier reclutador o cliente internacional vea de inmediato el nivel de ingeniería que manejas en ArchData. 
-
-Listo para copiar y pegar directamente en tu repositorio:
-
 ---
 
 # ⚙️ THE GRID: Data Engineering & Serverless Automation ⚡(ENG)
