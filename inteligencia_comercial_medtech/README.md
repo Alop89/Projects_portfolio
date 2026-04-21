@@ -41,7 +41,7 @@ Pasamos de la generación de datos crudos a la inferencia estadística avanzada 
 ### 3️⃣ Satisfacción del Cliente
 **Protocolo:** Correlación de rangos de Spearman ($\rho$).
 * **El reto:** ¿Una mayor satisfacción permite cobrar un ticket más alto en Imagenología?
-* **El análisis:** La correlación de Spearman ($\rho = 0.07, p = 0.11$) demostró que la satisfacción no altera el valor unitario de los contratos (el precio está anclado al mercado). Sin embargo, el análisis de densidades reveló que las categorías de satisfacción "Alta" concentran casi todo el ingreso.
+* **El análisis:** La correlación de Spearman demostró que la satisfacción no altera el valor unitario de los contratos (el precio está anclado al mercado). Sin embargo, el análisis de densidades reveló que las categorías de satisfacción "Alta" concentran casi todo el ingreso.
 * **El insight:** La satisfacción no es un *Price Driver*, es un **Volume Driver**. En HealthTech, el servicio post-venta garantiza la cuota de mercado (*Market Share*) y la frecuencia de compra.
 
 ![Porcentaje de satisfacción](https://github.com/Alop89/Projects_portfolio/blob/main/inteligencia_comercial_medtech/reports/figures/piechart_.png)
