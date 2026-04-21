@@ -66,11 +66,6 @@ La fase de análisis estadístico está cerrada. El próximo salto en la red es 
 
 
 ---
-
-¡Excelente, **Alfredo**\! Este proyecto de MedTech es tu "joya de la corona" en cuanto a profundidad estadística. Traducirlo al inglés con los términos precisos (como *heteroscedasticity*, *residuals* o *additive models*) va a gritar "Seniority" a cualquier reclutador o cliente internacional.
-
-Aquí tienes la versión en inglés lista para tu repositorio, manteniendo toda la mística **Synthwave**:
-
 -----
 
 # 🌌 MEDTECH DATA GRID: Intelligence and Market Analysis 🏥⚡(ENG)
