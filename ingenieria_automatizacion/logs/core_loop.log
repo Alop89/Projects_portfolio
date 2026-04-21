@@ -1,0 +1,168 @@
+2026-04-20 19:39:43,836 - INFO - Monitoreando carpeta: ./erp_inbox
+2026-04-20 19:39:51,792 - INFO - Subcarpeta detectada: ./erp_inbox\ventas_semana_nueva.csv; se aborta el proceso
+2026-04-20 19:39:51,792 - INFO - Archivo detectado: ventas_semana_nueva.csv, comienza proceso ETL
+2026-04-20 19:39:51,792 - INFO - Procesando archivo: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:39:51,793 - INFO - Inicio de proceso ETL para: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:39:51,795 - INFO - Archivo cargado correctamente, filas: 8
+2026-04-20 19:39:54,401 - ERROR - Error procesando archivo ./erp_inbox\ventas_semana_nueva.csv: (psycopg2.errors.UndefinedColumn) column "Region" does not exist
+LINE 8: ...             "Order_ID", "Date", "Hospital_Type", "Region", ...
+                                                             ^
+DETAIL:  There is a column named "Region" in table "medtech_sales_data", but it cannot be referenced from this part of the query.
+
+[SQL: 
+                INSERT INTO "medtech_sales_data" (
+                    "Order_ID", "Date", "Hospital_Type", "Region", "Product_Category", 
+                    "Product_Name", "Quantity", "Unit_Price_USD", "Discount_Applied", 
+                    "Total_Sales_USD", "Customer_Satisfaction"
+                )
+                SELECT 
+                    "Order_ID", "Date", "Hospital_Type", "Region", "Product_Category", 
+                    "Product_Name", "Quantity", "Unit_Price_USD", "Discount_Applied", 
+                    "Total_Sales_USD", "Customer_Satisfaction"
+                FROM "staging_medtech"
+                ON CONFLICT ("Order_ID") 
+                DO UPDATE SET 
+                    "Hospital_Type" = EXCLUDED."Hospital_Type",
+                    "Region" = EXCLUDED."Region",
+                    "Product_Category" = EXCLUDED."Product_Category",
+                    "Product_Name" = EXCLUDED."Product_Name",
+                    "Quantity" = EXCLUDED."Quantity",
+                    "Unit_Price_USD" = EXCLUDED."Unit_Price_USD",
+                    "Discount_Applied" = EXCLUDED."Discount_Applied",
+                    "Total_Sales_USD" = EXCLUDED."Total_Sales_USD",
+                    "Customer_Satisfaction" = EXCLUDED."Customer_Satisfaction";
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-20 19:39:54,418 - INFO - Archivo procesado correctamente: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:42:09,245 - INFO - Monitoreo detenido por el usuario
+2026-04-20 19:46:52,974 - INFO - Monitoreando carpeta: ./erp_inbox
+2026-04-20 19:47:14,918 - INFO - Subcarpeta detectada: ./erp_inbox\ventas_semana_nueva.csv; se aborta el proceso
+2026-04-20 19:47:14,919 - INFO - Archivo detectado: ventas_semana_nueva.csv, comienza proceso ETL
+2026-04-20 19:47:14,919 - INFO - Procesando archivo: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:47:14,919 - INFO - Inicio de proceso ETL para: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:47:14,921 - INFO - Archivo cargado correctamente, filas: 10
+2026-04-20 19:47:19,167 - ERROR - Error procesando archivo ./erp_inbox\ventas_semana_nueva.csv: (psycopg2.errors.UndefinedColumn) column "Customer_Satisfaction, Business_unit" of relation "medtech_sales_data" does not exist
+LINE 5:                     "Total_Sales_USD", "Customer_Satisfactio...
+                                               ^
+
+[SQL: 
+                INSERT INTO "medtech_sales_data" (
+                    "Order_ID", "Date", "Hospital_Type", "Region", "Product_Category", 
+                    "Product_Name", "Quantity", "Unit_Price_USD", "Discount_Applied", 
+                    "Total_Sales_USD", "Customer_Satisfaction, Business_unit"
+                )
+                SELECT 
+                    "Order_ID", "Date", "Hospital_Type", "Region", "Product_Category", 
+                    "Product_Name", "Quantity", "Unit_Price_USD", "Discount_Applied", 
+                    "Total_Sales_USD", "Customer_Satisfaction, Business_unit"
+                FROM "staging_medtech"
+                ON CONFLICT ("Order_ID") 
+                DO UPDATE SET 
+                    "Hospital_Type" = EXCLUDED."Hospital_Type",
+                    "Region" = EXCLUDED."Region",
+                    "Product_Category" = EXCLUDED."Product_Category",
+                    "Product_Name" = EXCLUDED."Product_Name",
+                    "Quantity" = EXCLUDED."Quantity",
+                    "Unit_Price_USD" = EXCLUDED."Unit_Price_USD",
+                    "Discount_Applied" = EXCLUDED."Discount_Applied",
+                    "Total_Sales_USD" = EXCLUDED."Total_Sales_USD",
+                    "Customer_Satisfaction" = EXCLUDED."Customer_Satisfaction", 
+                    "Business_unit" = EXCLUDED."Business_unit";
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-20 19:47:19,168 - INFO - Archivo procesado correctamente: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:48:26,533 - INFO - Monitoreo detenido por el usuario
+2026-04-20 19:48:41,704 - INFO - Monitoreando carpeta: ./erp_inbox
+2026-04-20 19:48:50,008 - INFO - Subcarpeta detectada: ./erp_inbox\ventas_semana_nueva.csv; se aborta el proceso
+2026-04-20 19:48:50,008 - INFO - Archivo detectado: ventas_semana_nueva.csv, comienza proceso ETL
+2026-04-20 19:48:50,009 - INFO - Procesando archivo: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:48:50,009 - INFO - Inicio de proceso ETL para: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:48:50,012 - INFO - Archivo cargado correctamente, filas: 10
+2026-04-20 19:48:53,089 - ERROR - Error procesando archivo ./erp_inbox\ventas_semana_nueva.csv: (psycopg2.errors.UndefinedColumn) column "Customer_Satisfaction, Business_unit" of relation "medtech_sales_data" does not exist
+LINE 5:                     "Total_Sales_USD", "Customer_Satisfactio...
+                                               ^
+
+[SQL: 
+                INSERT INTO "medtech_sales_data" (
+                    "Order_ID", "Date", "Hospital_Type", "Region", "Product_Category", 
+                    "Product_Name", "Quantity", "Unit_Price_USD", "Discount_Applied", 
+                    "Total_Sales_USD", "Customer_Satisfaction, Business_unit"
+                )
+                SELECT 
+                    "Order_ID", "Date", "Hospital_Type", "Region", "Product_Category", 
+                    "Product_Name", "Quantity", "Unit_Price_USD", "Discount_Applied", 
+                    "Total_Sales_USD", "Customer_Satisfaction", "Business_unit"
+                FROM "staging_medtech"
+                ON CONFLICT ("Order_ID") 
+                DO UPDATE SET 
+                    "Hospital_Type" = EXCLUDED."Hospital_Type",
+                    "Region" = EXCLUDED."Region",
+                    "Product_Category" = EXCLUDED."Product_Category",
+                    "Product_Name" = EXCLUDED."Product_Name",
+                    "Quantity" = EXCLUDED."Quantity",
+                    "Unit_Price_USD" = EXCLUDED."Unit_Price_USD",
+                    "Discount_Applied" = EXCLUDED."Discount_Applied",
+                    "Total_Sales_USD" = EXCLUDED."Total_Sales_USD",
+                    "Customer_Satisfaction" = EXCLUDED."Customer_Satisfaction", 
+                    "Business_unit" = EXCLUDED."Business_unit";
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-20 19:48:53,090 - INFO - Archivo procesado correctamente: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:51:57,445 - INFO - Monitoreo detenido por el usuario
+2026-04-20 19:52:04,742 - INFO - Monitoreando carpeta: ./erp_inbox
+2026-04-20 19:52:10,131 - INFO - Subcarpeta detectada: ./erp_inbox\ventas_semana_nueva.csv; se aborta el proceso
+2026-04-20 19:52:10,132 - INFO - Archivo detectado: ventas_semana_nueva.csv, comienza proceso ETL
+2026-04-20 19:52:10,132 - INFO - Procesando archivo: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:52:10,133 - INFO - Inicio de proceso ETL para: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:52:10,135 - INFO - Archivo cargado correctamente, filas: 10
+2026-04-20 19:52:13,876 - ERROR - Error procesando archivo ./erp_inbox\ventas_semana_nueva.csv: (psycopg2.errors.InvalidColumnReference) there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+[SQL: 
+                INSERT INTO "medtech_sales_data" (
+                    "Order_ID", "Date", "Hospital_Type", "Region", "Product_Category", 
+                    "Product_Name", "Quantity", "Unit_Price_USD", "Discount_Applied", 
+                    "Total_Sales_USD", "Customer_Satisfaction", "Business_unit"
+                )
+                SELECT 
+                    "Order_ID", "Date", "Hospital_Type", "Region", "Product_Category", 
+                    "Product_Name", "Quantity", "Unit_Price_USD", "Discount_Applied", 
+                    "Total_Sales_USD", "Customer_Satisfaction", "Business_unit"
+                FROM "staging_medtech"
+                ON CONFLICT ("Order_ID") 
+                DO UPDATE SET 
+                    "Hospital_Type" = EXCLUDED."Hospital_Type",
+                    "Region" = EXCLUDED."Region",
+                    "Product_Category" = EXCLUDED."Product_Category",
+                    "Product_Name" = EXCLUDED."Product_Name",
+                    "Quantity" = EXCLUDED."Quantity",
+                    "Unit_Price_USD" = EXCLUDED."Unit_Price_USD",
+                    "Discount_Applied" = EXCLUDED."Discount_Applied",
+                    "Total_Sales_USD" = EXCLUDED."Total_Sales_USD",
+                    "Customer_Satisfaction" = EXCLUDED."Customer_Satisfaction", 
+                    "Business_unit" = EXCLUDED."Business_unit";
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-04-20 19:52:13,877 - INFO - Archivo procesado correctamente: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:54:40,581 - INFO - Monitoreo detenido por el usuario
+2026-04-20 19:59:43,019 - INFO - Monitoreando carpeta: ./erp_inbox
+2026-04-20 19:59:48,705 - INFO - Subcarpeta detectada: ./erp_inbox\ventas_semana_nueva.csv; se aborta el proceso
+2026-04-20 19:59:48,706 - INFO - Archivo detectado: ventas_semana_nueva.csv, comienza proceso ETL
+2026-04-20 19:59:48,706 - INFO - Procesando archivo: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:59:48,706 - INFO - Inicio de proceso ETL para: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:59:48,708 - INFO - Archivo cargado correctamente, filas: 10
+2026-04-20 19:59:50,713 - INFO - Datos agregados/actualizados correctamente en medtech_sales_data
+2026-04-20 19:59:50,714 - INFO - Archivo movido a procesados: ./erp_inbox\ventas_semana_nueva.csv.processed
+2026-04-20 19:59:50,715 - INFO - Proceso ETL completado para: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 19:59:50,716 - INFO - Archivo procesado correctamente: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 20:02:29,371 - INFO - Monitoreo detenido por el usuario
+2026-04-20 20:03:45,768 - INFO - Monitoreando carpeta: ./erp_inbox
+2026-04-20 20:03:52,092 - INFO - Subcarpeta detectada: ./erp_inbox\ventas_semana_nueva.csv; se aborta el proceso
+2026-04-20 20:03:52,092 - INFO - Archivo detectado: ventas_semana_nueva.csv, comienza proceso ETL
+2026-04-20 20:03:52,093 - INFO - Procesando archivo: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 20:03:52,093 - INFO - Inicio de proceso ETL para: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 20:03:52,095 - INFO - Archivo cargado correctamente, filas: 10
+2026-04-20 20:03:55,712 - INFO - Datos agregados/actualizados correctamente en medtech_sales_data
+2026-04-20 20:03:55,714 - INFO - Archivo movido a procesados: ./erp_inbox\ventas_semana_nueva.csv.processed
+2026-04-20 20:03:55,714 - INFO - Proceso ETL completado para: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 20:03:55,714 - INFO - Archivo procesado correctamente: ./erp_inbox\ventas_semana_nueva.csv
+2026-04-20 20:14:38,443 - INFO - Monitoreo detenido por el usuario
