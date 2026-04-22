@@ -12,6 +12,7 @@ plotly
 scikit-learn
 statsmodels
 xgboost
+scipy
 
 # Conectividad y Bases de Datos
 sqlalchemy
