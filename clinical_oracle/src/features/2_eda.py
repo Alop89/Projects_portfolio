@@ -2,6 +2,9 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from scipy import stats
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+from sklearn.feature_selection import mutual_info_classif
+from scipy.stats import chi2_contingency
 
 
 df = pd.read_csv('../../data/raw/clinical_trial_data.csv')
@@ -12,13 +15,38 @@ quit_ = df[df['Dropped_Out'] == 0].count() / len(df)
 
 print(f"Proporción de pacientes que se quedaron {stay_}, \nPacientes que abandaron {quit_}")
 
-df_numeric = df.drop("Patient_ID", axis = 1)
+df_numeric = df.select_dtypes(include='number')
 
+# Pairplot
 sns.pairplot(
     data = df_numeric
 )
 
+# Correlation matrix
+coor_matrix = df_numeric.corr()
+plt.figure(figsize=(15,5))
+sns.heatmap(
+    data = coor_matrix, 
+    annot = True, 
+    fmt = ".2f",
+    cmap = 'coolwarm',
+    linewidths= 0.5, 
+    square = True
+)
 
+# VIF Analysis
+
+X_num = df[['Age', 'BMI', 'Systolic_BP', 'Glucose_Level']]
+vif_data = pd.DataFrame()
+vif_data['Var'] = X_num.columns
+vif_data['VIF'] = [variance_inflation_factor(X_num.values, i) for i in range(len(X_num.columns))]
+
+print("Análisis de VIF:")
+print(vif_data)
+
+
+plt.title("Matriz de correlación para variables numéricas")
+plt.show()
 # Análisis de distribución 
 sns.set_style("darkgrid")
 fig, (ax1, ax2) = plt.subplots(1,2,figsize=(15,5))
