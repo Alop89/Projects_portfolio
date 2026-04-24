@@ -48,7 +48,6 @@ preprocessor = ColumnTransformer(
 
 
 # Pipeline 
-
 pipeline = Pipeline(
     steps =[
         ('preprocessor', preprocessor),
@@ -76,7 +75,6 @@ print(f"Los mejores hiperparámetros para el modelo de regresión logistica son 
 
 
 # Optimización del umbral clínico 
-
 y_scores = best_model.predict_proba(X_test)[:,1]
 
 precisions, recalls, thresholds = precision_recall_curve(Y_test, y_scores)
@@ -90,7 +88,6 @@ print(f"El umbral óptima calculado fue de = {optimal_thresholds:.3f}")
 
 
 # Evaluación y persistencia 
-
 y_pred_custom = (y_scores >= optimal_thresholds).astype(int)
 
 print("\nREPORTE DE CLASIFICACIÓN (umbral ajustado):")
@@ -109,7 +106,6 @@ print(f"Verdaderos Positivos (Abandono detectado a tiempo): {cm[1][1]}")
 
 
 # Visualización de la matriz de confusión
-
 ConfusionMatrixDisplay.from_predictions(Y_test, y_pred_custom, 
                                         display_labels=['No Abandonó', 'Abandonó'],
                                         cmap='magma')
