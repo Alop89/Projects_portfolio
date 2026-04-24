@@ -13,10 +13,14 @@ scikit-learn
 statsmodels
 xgboost
 scipy
+shap
 
 # Conectividad y Bases de Datos
 sqlalchemy
 pyodbc
 
-# Motor para Jupyter Notebooks en VS Code
+# Motor para Jupyter Notebooks 
 ipykernel
+ipywidgets
+joblib
+streamlit

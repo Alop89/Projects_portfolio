@@ -67,7 +67,7 @@ grid_search = GridSearchCV(pipeline, param_grid, cv = cv_strategy, scoring= 'roc
 
 grid_search.fit(X_train, Y_train)
 
-best_estimator = grid_search.best_estimator_
+best_model = grid_search.best_estimator_
 best_params = grid_search.best_params_
 
 
