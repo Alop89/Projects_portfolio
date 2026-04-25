@@ -36,7 +36,7 @@ Pasamos de la limpieza hermética de datos clínicos a la optimización matemát
 
 
 ![Mutual information graph](https://github.com/Alop89/Projects_portfolio/blob/main/clinical_oracle/reports/figures/mutual_info_barplot.png)
-![Matriz de confusión clínica](rhttps://github.com/Alop89/Projects_portfolio/blob/main/clinical_oracle/reports/figures/conf_matrix.png)
+![Matriz de confusión clínica](https://github.com/Alop89/Projects_portfolio/blob/main/clinical_oracle/reports/figures/conf_matrix.png)
 
 ### 3️⃣ Inteligencia Artificial Explicable (XAI)
 **Protocolo:** Teoría de Juegos de Shapley (SHAP) - Beeswarm & Waterfall Plots.
