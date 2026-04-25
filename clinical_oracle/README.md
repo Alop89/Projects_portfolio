@@ -1,5 +1,5 @@
 # 🧬 THE CLINICAL ORACLE: Predictive Risk & Explainable AI in Clinical Trials 🏥🤖
-> **By ArchData Consulting** ![Banner Principal](ruta/a/tu/imagen_banner_clinical_oracle.png)
+> **By ArchData Consulting** ![Banner Principal](https://github.com/Alop89/Projects_portfolio/blob/main/clinical_oracle/reports/figures/arch_data_.png)
 
 ## 💾 PROJECT OVERVIEW
 Este proyecto representa una solución integral de Machine Learning (MLOps) diseñada para mitigar uno de los mayores riesgos financieros y científicos en la investigación médica: **el abandono de pacientes en ensayos clínicos (Drop-outs)**. 
@@ -24,7 +24,9 @@ Pasamos de la limpieza hermética de datos clínicos a la optimización matemát
 * **El análisis:** Se encapsuló el preprocesamiento de biomarcadores numéricos y categóricos directamente dentro de la canalización del modelo. Al combinarlo con un `StratifiedKFold` de 5 pliegues, el escalamiento se recalculó desde cero en cada iteración.
 * **El insight:** Se garantizó una matriz matemática 100% pura y libre de *Data Leakage*, asegurando que el ROC-AUC (0.783) reportado sea el rendimiento verdadero en el mundo real.
 
-![Matriz de Correlación y VIF](ruta/a/tu/imagen_correlacion_vif.png)
+![Distribución](https://github.com/Alop89/Projects_portfolio/blob/main/clinical_oracle/reports/figures/box_violin_distribution.png)
+![Matriz de Correlación](https://github.com/Alop89/Projects_portfolio/blob/main/clinical_oracle/reports/figures/pairplot.png)
+
 
 ### 2️⃣ Optimización de umbral clínico (Threshold Tuning)
 **Protocolo:** Curva Precision-Recall y métrica $F_2$-Score.
@@ -32,7 +34,9 @@ Pasamos de la limpieza hermética de datos clínicos a la optimización matemát
 * **El análisis:** Se forzó al algoritmo a priorizar la sensibilidad del ensayo (Recall). Al optimizar la métrica $F_2$ (que da doble peso al Recall), el límite de decisión se calibró agresivamente al **20.4%**.
 * **El insight:** Erradicamos los Falsos Negativos (**Recall del 100%**). El modelo detecta a todos los pacientes en riesgo. Asumimos estratégicamente un volumen menor de falsas alarmas, cuyo costo operativo (una llamada preventiva) es justificable frente a la pérdida de datos del estudio.
 
-![Matriz de Confusión Clínica](ruta/a/tu/imagen_matriz_confusion.png)
+
+![Mutual information graph](https://github.com/Alop89/Projects_portfolio/blob/main/clinical_oracle/reports/figures/mutual_info_barplot.png)
+![Matriz de confusión clínica](rhttps://github.com/Alop89/Projects_portfolio/blob/main/clinical_oracle/reports/figures/conf_matrix.png)
 
 ### 3️⃣ Inteligencia Artificial Explicable (XAI)
 **Protocolo:** Teoría de Juegos de Shapley (SHAP) - Beeswarm & Waterfall Plots.
@@ -40,12 +44,16 @@ Pasamos de la limpieza hermética de datos clínicos a la optimización matemát
 * **El análisis:** El modelo fue auditado con SHAP. A nivel global, descubrimos que la privación del tratamiento activo (`Treatment_Arm_Placebo`) es el principal disparador de abandonos, validando que el ensayo sufre por falta de eficacia percibida.
 * **El insight:** A nivel local, el sistema descompone el riesgo de cada paciente individual, mostrando exactamente cuántos puntos de riesgo añade su presión arterial o nivel de glucosa, dándole al médico una guía de intervención precisa.
 
-![Análisis Global SHAP](ruta/a/tu/imagen_shap_beeswarm.png)
+![Análisis global SHAP](https://github.com/Alop89/Projects_portfolio/blob/main/clinical_oracle/reports/figures/beeswarm_plot.png)
+
+![Explicación local SHAP](https://github.com/Alop89/Projects_portfolio/blob/main/clinical_oracle/reports/figures/waterfall_graph.png)
 
 ### Panel clínico interactivo (Streamlit App)
 Se generó una aplicación web de soporte a decisiones clínicas (CDSS) donde los especialistas ingresan los biomarcadores del paciente y el motor de inferencia calcula el riesgo y renderiza el razonamiento (SHAP Waterfall) en tiempo real.
 
-![Demo de la App Streamlit](ruta/a/tu/imagen_streamlit_app.png) 
+![Demo de la App Streamlit](https://github.com/Alop89/Projects_portfolio/blob/main/clinical_oracle/reports/figures/streamlit_negative.png) 
+
+![Demo de la App Streamlit](https://github.com/Alop89/Projects_portfolio/blob/main/clinical_oracle/reports/figures/streamlit_positive.png) 
 
 ---
 
