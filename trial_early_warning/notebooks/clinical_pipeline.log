@@ -1,0 +1,8 @@
+2026-04-25 15:07:17 - INFO : Carga correcta de datos, número de registros = 2500
+2026-04-25 15:07:17 - ERROR : Error al cargar datos en : ../data/raw/clinical_data_raw.csv
+2026-04-25 15:18:56 - INFO : Carga correcta de datos, número de registros = 2500
+2026-04-25 15:18:56 - INFO : Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-04-25 15:18:56 - INFO : Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-04-25 15:18:56 - INFO : Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-04-25 15:18:56 - INFO : Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-04-25 15:21:04 - INFO : EDA completado con éxito.
