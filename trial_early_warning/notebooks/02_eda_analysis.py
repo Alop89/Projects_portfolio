@@ -81,7 +81,8 @@ def run_eda_pipeline(data_path: str = "../data/raw/clinical_data_raw.csv"):
             y = 'severe_adverse_event', 
             palette = 'viridis', 
             ax = ax4,
-            errorbar = None
+            errorbar = None, 
+            hue = 'severe_adverse_event'
         )
         ax4.set_title('Incidencia de SAE por brazo de tratamiento', fontsize = 12, fontweight='bold')
         ax4.set_xlabel('Brazo de tratamiento', fontsize = 12, fontweight='bold')

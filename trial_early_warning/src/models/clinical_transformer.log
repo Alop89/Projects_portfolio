@@ -1,0 +1,18 @@
+2026-04-25 19:31:11 - INFO - Iniciando el pipeline de ingenier�a de datos... ../../data/raw/clinical_data_raw.csv
+2026-04-25 19:31:11 - INFO - Datos divididos con �xito, registros de entrenamiento: 2000
+2026-04-25 19:31:13 - INFO - Feature engineering (fit_transform) completado en entrenamiento
+2026-04-25 19:31:13 - INFO - VIF calculado correctamente
+2026-04-25 19:31:13 - INFO - Prueba VIF exitosa: Todas las variables tienen un VIF menor a 5.
+2026-04-25 19:31:13 - INFO - Preprocesamiento finalizado con �xito.
+2026-04-25 19:32:23 - INFO - Iniciando el pipeline de ingenier�a de datos... ../../data/raw/clinical_data_raw.csv
+2026-04-25 19:32:23 - INFO - Datos divididos con �xito, registros de entrenamiento: 2000
+2026-04-25 19:32:25 - INFO - Feature engineering (fit_transform) completado en entrenamiento
+2026-04-25 19:32:25 - INFO - VIF calculado correctamente
+2026-04-25 19:32:25 - INFO - Prueba VIF exitosa: Todas las variables tienen un VIF menor a 5.
+2026-04-25 19:32:25 - INFO - Preprocesamiento finalizado con �xito.
+2026-04-25 19:33:25 - INFO - Iniciando el pipeline de ingenier�a de datos... ../../data/raw/clinical_data_raw.csv
+2026-04-25 19:33:25 - INFO - Datos divididos con �xito, registros de entrenamiento: 2000
+2026-04-25 19:33:26 - INFO - Feature engineering (fit_transform) completado en entrenamiento
+2026-04-25 19:33:26 - INFO - VIF calculado correctamente
+2026-04-25 19:33:26 - INFO - Prueba VIF exitosa: Todas las variables tienen un VIF menor a 5.
+2026-04-25 19:33:26 - INFO - Preprocesamiento finalizado con �xito.
