@@ -1,0 +1,148 @@
+2026-04-26 16:37:44 - INFO - Iniciando el pipeline de ingeniería de datos... ../../data/raw/clinical_data_raw.csv
+2026-04-26 16:37:44 - INFO - Datos divididos con éxito, registros de entrenamiento: 2000
+2026-04-26 16:37:45 - INFO - Feature engineering (fit_transform) completado en entrenamiento
+2026-04-26 16:37:45 - INFO - VIF calculado correctamente
+2026-04-26 16:37:45 - INFO - Prueba VIF exitosa: Todas las variables tienen un VIF menor a 5.
+2026-04-26 16:37:45 - INFO - Preprocesamiento finalizado con éxito.
+2026-04-26 16:37:45 - INFO - Iniciando GridSearchCV...
+2026-04-26 16:37:48 - ERROR - Error en el entrenamiento del modelo: 
+All the 80 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+80 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\utils\_indexing.py", line 446, in _get_column_indices
+    all_columns = X.columns
+                  ^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'columns'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 833, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\pipeline.py", line 613, in fit
+    Xt = self._fit(X, y, routed_params, raw_params=params)
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\pipeline.py", line 547, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+                            ~~~~~~~~~~~~~~~~~~~~~~~~^
+        cloned_transformer,
+        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        params=step_params,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\pipeline.py", line 1484, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\compose\_column_transformer.py", line 991, in fit_transform
+    self._validate_column_callables(X)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\compose\_column_transformer.py", line 545, in _validate_column_callables
+    transformer_to_input_indices[name] = _get_column_indices(X, columns)
+                                         ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\utils\_indexing.py", line 448, in _get_column_indices
+    raise ValueError(
+        "Specifying the columns using strings is only supported for dataframes."
+    )
+ValueError: Specifying the columns using strings is only supported for dataframes.
+
+2026-04-26 16:41:16 - INFO - Iniciando el pipeline de ingeniería de datos... ../../data/raw/clinical_data_raw.csv
+2026-04-26 16:41:16 - INFO - Datos divididos con éxito, registros de entrenamiento: 2000
+2026-04-26 16:41:18 - INFO - Feature engineering (fit_transform) completado en entrenamiento
+2026-04-26 16:41:18 - INFO - VIF calculado correctamente
+2026-04-26 16:41:18 - INFO - Prueba VIF exitosa: Todas las variables tienen un VIF menor a 5.
+2026-04-26 16:41:18 - INFO - Preprocesamiento finalizado con éxito.
+2026-04-26 16:41:18 - INFO - Iniciando GridSearchCV...
+2026-04-26 16:41:21 - ERROR - Error en el entrenamiento del modelo: 
+All the 80 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+80 fits failed with the following error:
+Traceback (most recent call last):
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\utils\_indexing.py", line 446, in _get_column_indices
+    all_columns = X.columns
+                  ^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'columns'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\model_selection\_validation.py", line 833, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\pipeline.py", line 613, in fit
+    Xt = self._fit(X, y, routed_params, raw_params=params)
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\pipeline.py", line 547, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+                            ~~~~~~~~~~~~~~~~~~~~~~~~^
+        cloned_transformer,
+        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        params=step_params,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\joblib\memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\pipeline.py", line 1484, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\utils\_set_output.py", line 316, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\base.py", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\compose\_column_transformer.py", line 991, in fit_transform
+    self._validate_column_callables(X)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\compose\_column_transformer.py", line 545, in _validate_column_callables
+    transformer_to_input_indices[name] = _get_column_indices(X, columns)
+                                         ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\.venv\Lib\site-packages\sklearn\utils\_indexing.py", line 448, in _get_column_indices
+    raise ValueError(
+        "Specifying the columns using strings is only supported for dataframes."
+    )
+ValueError: Specifying the columns using strings is only supported for dataframes.
+
+2026-04-26 16:42:37 - INFO - Iniciando el pipeline de ingeniería de datos... ../../data/raw/clinical_data_raw.csv
+2026-04-26 16:42:37 - INFO - Datos divididos con éxito, registros de entrenamiento: 2000
+2026-04-26 16:42:39 - INFO - Feature engineering (fit_transform) completado en entrenamiento
+2026-04-26 16:42:39 - INFO - VIF calculado correctamente
+2026-04-26 16:42:39 - INFO - Prueba VIF exitosa: Todas las variables tienen un VIF menor a 5.
+2026-04-26 16:42:39 - INFO - Preprocesamiento finalizado con éxito.
+2026-04-26 16:42:39 - INFO - Iniciando GridSearchCV...
+2026-04-26 16:42:44 - INFO - Mejores hiperparámetros encontrados: {'classifier__learning_rate': 0.01, 'classifier__max_depth': 3, 'classifier__n_estimators': 100, 'classifier__scale_pos_weight': 1}
+2026-04-26 16:42:44 - INFO - ROC-AUC Score en test: 0.6012
+2026-04-26 16:42:44 - INFO - Curva Precision-Recall calculada exitosamente.
+2026-04-26 16:42:44 - INFO - Umbral óptimo: 0.0878
+2026-04-26 16:45:32 - INFO - Pipeline serializado y guardado exitosamente en: clinical_xgboost_pipeline.pkl
+2026-04-26 16:46:19 - INFO - Iniciando el pipeline de ingeniería de datos... ../../data/raw/clinical_data_raw.csv
+2026-04-26 16:46:19 - INFO - Datos divididos con éxito, registros de entrenamiento: 2000
+2026-04-26 16:46:21 - INFO - Feature engineering (fit_transform) completado en entrenamiento
+2026-04-26 16:46:21 - INFO - VIF calculado correctamente
+2026-04-26 16:46:21 - INFO - Prueba VIF exitosa: Todas las variables tienen un VIF menor a 5.
+2026-04-26 16:46:21 - INFO - Preprocesamiento finalizado con éxito.
+2026-04-26 16:46:21 - INFO - Iniciando GridSearchCV...
+2026-04-26 16:46:25 - INFO - Mejores hiperparámetros encontrados: {'classifier__learning_rate': 0.01, 'classifier__max_depth': 3, 'classifier__n_estimators': 100, 'classifier__scale_pos_weight': 1}
+2026-04-26 16:46:25 - INFO - ROC-AUC Score en test: 0.6012
+2026-04-26 16:46:25 - INFO - Curva Precision-Recall calculada exitosamente.
+2026-04-26 16:46:25 - INFO - Umbral óptimo: 0.0878
+2026-04-26 16:47:09 - INFO - Pipeline serializado y guardado exitosamente en: clinical_xgboost_pipeline.pkl

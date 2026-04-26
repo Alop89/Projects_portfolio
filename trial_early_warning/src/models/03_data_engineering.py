@@ -47,8 +47,8 @@ def run_engineering_pipeline(data_path: str = '../../data/raw/clinical_data_raw.
         df = pd.read_csv(data_path)
 
         # Separación de columnas X y y
-        X = df.drop(columns=['patient_id', 'severe_adverse_event'])
-        y = df['severe_adverse_event']
+        X = df.drop(columns=['patient_id', 'severe_adverse_event']) #Features
+        y = df['severe_adverse_event'] # Target
 
         # Separación de conjunto de entrenamiento y prueba 
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=21, stratify=y)
@@ -59,15 +59,15 @@ def run_engineering_pipeline(data_path: str = '../../data/raw/clinical_data_raw.
         cat_columns = X.select_dtypes(include=['object', 'string']).columns.tolist()
 
         # Pipeline numérico
-        num_pipeline = Pipeline([
+        num_pipeline = Pipeline( steps =[
             ('imputer', SimpleImputer(strategy='median')),
-            ('scaler', StandardScaler())
+            ('scaler', StandardScaler()) # Estandaraziación de variables numéricas para comparar diferentes rangos de valores.
         ])
 
         # Pipeline categórico
-        cat_pipeline = Pipeline([
+        cat_pipeline = Pipeline(steps =[
             ('imputer', SimpleImputer(strategy='most_frequent')),
-            ('encoder', OneHotEncoder(drop='first', sparse_output=False, handle_unknown='ignore'))
+            ('encoder', OneHotEncoder(drop='first', sparse_output=False, handle_unknown='ignore')) #drop = 'first' evita la multicolinealidad, evita inferir columnas a partir de otras. 
         ])
 
         # Column Transformer
@@ -99,7 +99,7 @@ def run_engineering_pipeline(data_path: str = '../../data/raw/clinical_data_raw.
 
         print("Proceso concluido de forma exitosa.")
         
-        return X_train_processed, X_test, y_train, y_test, preprocessor
+        return X_train, X_test, y_train, y_test, preprocessor
 
     except Exception as e:
         logging.error(f"Error crítico en el pipeline: {e}")
