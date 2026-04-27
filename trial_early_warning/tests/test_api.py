@@ -1,13 +1,17 @@
 from fastapi.testclient import TestClient
-from api.main import app
+import sys
+import os 
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from src.webapp.api import app
 
 client = TestClient(app)
 
 def test_health_check():
-    """Valida que la API esté viva."""
     response = client.get("/health")
     assert response.status_code == 200
-    assert response.json() == {"status": "healthy", "service": "Clinical Oracle API"}
+    assert response.json() == {"status": "healthy", "model_loaded": True}
 
 def test_predict_endpoint():
     """Simula una petición POST y valida la respuesta del modelo."""

@@ -19,7 +19,9 @@ app = FastAPI(
 )
 
 try:
-    MODEL_PATH = "../models/clinical_xgboost_pipeline.pkl"
+    import os
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+    MODEL_PATH = os.path.join(base_dir, 'src', 'models', 'clinical_xgboost_pipeline.pkl')
     pipeline = joblib.load(MODEL_PATH)
     logging.info(f"Modelo cargado en memoria desde el path: {MODEL_PATH}")
 
