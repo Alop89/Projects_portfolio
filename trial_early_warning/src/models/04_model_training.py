@@ -20,7 +20,7 @@ logging.basicConfig(
     filename = "clinical_model_training.log",
     format = "%(asctime)s - %(levelname)s - %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
-    filemode ='a'
+    filemode ='w'
 )
 
 def train_and_evaluate_model(X_train, X_test, y_train, y_test, preprocessor):
