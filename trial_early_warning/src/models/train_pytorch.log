@@ -1,0 +1,9 @@
+2026-04-27 14:33:37 - INFO - PyTorch, modelo importado de forma exitosa
+2026-04-27 14:33:41 - INFO - Comenzando entrenamiento del modelo de deep learning
+2026-04-27 14:33:41 - INFO - Epoch [29/150], Loss: 0.3144
+2026-04-27 14:33:41 - INFO - Epoch [59/150], Loss: 0.2849
+2026-04-27 14:33:41 - INFO - Epoch [89/150], Loss: 0.2852
+2026-04-27 14:33:41 - INFO - Epoch [119/150], Loss: 0.2814
+2026-04-27 14:33:41 - INFO - Epoch [149/150], Loss: 0.2752
+2026-04-27 14:33:41 - INFO - Pesos de la red neuronal guardados en: C:\Users\ibtjl\OneDrive\Documentos\GitHub\Projects_portfolio\trial_early_warning\src\models\clinical_pytorch_model.pt
+2026-04-27 14:33:41 - INFO - Proceso de entrenamiento finalizado
