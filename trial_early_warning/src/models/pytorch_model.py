@@ -11,7 +11,7 @@ class ClinicalNeuralNetwork(nn.Module):
         # Capa densa
         self.layer_1 = nn.Linear(input_dim, 32)
         self.layer_2 = nn.Linear(32, 16)
-        self.output_layer = nn.Linear(16, 1)
+        self.output_layer = nn.Linear(16, 1) 
 
 
         # Activación y regularización 
