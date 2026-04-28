@@ -91,4 +91,4 @@ def train_deep_learning_model():
         logging.info("Proceso de entrenamiento finalizado")
 
 if __name__ == '__main__':
-    train_deep_learning_model()
+    train_deep_learning_model() 
