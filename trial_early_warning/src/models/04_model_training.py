@@ -25,7 +25,7 @@ logging.basicConfig(
 
 def train_and_evaluate_model(X_train, X_test, y_train, y_test, preprocessor):
     """
-    Entrena el modelo XGBoost con GridSearchCV, y optimiza los hiperparámetros y ajusta 
+    Entrena el modelo XGBoost con GridSearchCV, optimiza los hiperparámetros y ajusta 
     el umbral de decisión. 
     """
     try:
@@ -34,16 +34,16 @@ def train_and_evaluate_model(X_train, X_test, y_train, y_test, preprocessor):
         pipeline = Pipeline(
             steps = [
                 ('preprocessor', preprocessor),
-                ('classifier', XGBClassifier(random_state =21, eval_metric ='logloss'))
+                ('classifier', XGBClassifier(random_state =21, eval_metric ='logloss')) # Otra opción es logloss. 
             ]
         )
 
         # Validación cruzada 
         param_grid = {
-            'classifier__n_estimators' :[50,100],
+            'classifier__n_estimators' :[50,100,200],
             'classifier__max_depth': [3,5],
             'classifier__learning_rate' :[0.05,0.01],
-            'classifier__scale_pos_weight' :[1,5]
+            'classifier__scale_pos_weight' :[1,10]
         }
         
         # Validación cruzada estratificada 
@@ -116,6 +116,10 @@ def train_and_evaluate_model(X_train, X_test, y_train, y_test, preprocessor):
     return None
 
 
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'features')))
+    
 if __name__ == "__main__":
     data_eng = __import__('03_data_engineering')
     X_train, X_test, y_train, y_test, preprocessor = data_eng.run_engineering_pipeline()

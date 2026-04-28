@@ -2,6 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from scipy import stats
+import statsmodels.api as sm
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 from sklearn.feature_selection import mutual_info_classif
 from scipy.stats import chi2_contingency
@@ -37,9 +38,10 @@ sns.heatmap(
 # VIF Analysis
 
 X_num = df[['Age', 'BMI', 'Systolic_BP', 'Glucose_Level']]
+X_num_with_constant = sm.add_constant(X_num)
 vif_data = pd.DataFrame()
-vif_data['Var'] = X_num.columns
-vif_data['VIF'] = [variance_inflation_factor(X_num.values, i) for i in range(len(X_num.columns))]
+vif_data['Var'] = X_num_with_constant.columns
+vif_data['VIF'] = [variance_inflation_factor(X_num_with_constant.values, i) for i in range(len(X_num_with_constant.columns))]
 
 print("Análisis de VIF:")
 print(vif_data)

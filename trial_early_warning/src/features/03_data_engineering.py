@@ -1,10 +1,12 @@
 import pandas as pd
 import numpy as np
 import logging
+import statsmodels.api as sm
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
+from sklearn.impute import SimpleImputer, KNNImputer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
@@ -20,12 +22,14 @@ logging.basicConfig(
 def calculate_vif(X_transformed, feature_names):
     """Calcula VIF para determinar multicolinealidad"""
     try:
+        
         vif_data = pd.DataFrame()
-        vif_data['Features'] = feature_names 
+        vif_data['Features'] = ['const'] + list(feature_names) 
+        X_transformed_with_constant = sm.add_constant(X_transformed)
         vif_data['VIF'] = [
-            variance_inflation_factor(X_transformed, i) for i in range(X_transformed.shape[1])
+            variance_inflation_factor(X_transformed_with_constant, i) for i in range(X_transformed_with_constant.shape[1])
         ]
-        logging.info("VIF calculado correctamente")
+        logging.info("VIF calculado correctamente")  
 
         # Evaluación de VIF
         high_vif = vif_data[vif_data['VIF'] >= 5]
@@ -45,12 +49,13 @@ def run_engineering_pipeline(data_path: str = '../../data/raw/clinical_data_raw.
     logging.info(f"Iniciando el pipeline de ingeniería de datos... {data_path}")
     try:
         df = pd.read_csv(data_path)
+        logging.info(f"Dataframe de entrenamiento creado con éxito, registros: {len(df)}")
 
         # Separación de columnas X y y
         X = df.drop(columns=['patient_id', 'severe_adverse_event']) #Features
         y = df['severe_adverse_event'] # Target
-
-        # Separación de conjunto de entrenamiento y prueba 
+ 
+        # Separación de conjunto de entrenamiento y prueba  
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=21, stratify=y)
         logging.info(f"Datos divididos con éxito, registros de entrenamiento: {len(X_train)}")
 
@@ -61,16 +66,16 @@ def run_engineering_pipeline(data_path: str = '../../data/raw/clinical_data_raw.
         # Pipeline numérico
         num_pipeline = Pipeline( steps =[
             ('imputer', SimpleImputer(strategy='median')),
-            ('scaler', StandardScaler()) # Estandaraziación de variables numéricas para comparar diferentes rangos de valores.
+            ('scaler', StandardScaler())
         ])
 
         # Pipeline categórico
         cat_pipeline = Pipeline(steps =[
             ('imputer', SimpleImputer(strategy='most_frequent')),
-            ('encoder', OneHotEncoder(drop='first', sparse_output=False, handle_unknown='ignore')) #drop = 'first' evita la multicolinealidad, evita inferir columnas a partir de otras. 
+            ('encoder', OneHotEncoder(drop='first', sparse_output=False, handle_unknown='ignore')) 
         ])
 
-        # Column Transformer
+        # Column Transformer principal 
         preprocessor = ColumnTransformer(
             transformers=[
                 ('num', num_pipeline, num_columns),
@@ -107,4 +112,4 @@ def run_engineering_pipeline(data_path: str = '../../data/raw/clinical_data_raw.
         raise
 
 if __name__ == "__main__":
-    X_train_proc, X_test, y_train, y_test, preprocessor = run_engineering_pipeline()
+    X_train, X_test, y_train, y_test, preprocessor = run_engineering_pipeline()

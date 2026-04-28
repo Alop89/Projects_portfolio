@@ -1,10 +1,11 @@
-2026-04-26 17:30:25 - INFO - Preparando datos y modelo para análisis SHAP...
-2026-04-26 17:30:25 - INFO - Iniciando el pipeline de ingeniería de datos... ../../data/raw/clinical_data_raw.csv
-2026-04-26 17:30:25 - INFO - Datos divididos con éxito, registros de entrenamiento: 2000
-2026-04-26 17:30:27 - INFO - Feature engineering (fit_transform) completado en entrenamiento
-2026-04-26 17:30:27 - INFO - VIF calculado correctamente
-2026-04-26 17:30:27 - INFO - Prueba VIF exitosa: Todas las variables tienen un VIF menor a 5.
-2026-04-26 17:30:27 - INFO - Preprocesamiento finalizado con éxito.
-2026-04-26 17:30:27 - INFO - Pipeline cargado exitosamente desde: clinical_xgboost_pipeline.pkl
-2026-04-26 17:30:27 - INFO - Iniciando el análisis SHAP...
-2026-04-26 17:32:42 - INFO - Análisis SHAP completado exitosamente
+2026-04-28 01:34:47 - INFO - Preparando datos y modelo para análisis SHAP...
+2026-04-28 01:34:48 - INFO - Iniciando el pipeline de ingeniería de datos... ../../data/raw/clinical_data_raw.csv
+2026-04-28 01:34:48 - INFO - Dataframe de entrenamiento creado con éxito, registros: 2500
+2026-04-28 01:34:48 - INFO - Datos divididos con éxito, registros de entrenamiento: 2000
+2026-04-28 01:34:50 - INFO - Feature engineering (fit_transform) completado en entrenamiento
+2026-04-28 01:34:50 - INFO - VIF calculado correctamente
+2026-04-28 01:34:50 - INFO - Prueba VIF exitosa: Todas las variables tienen un VIF menor a 5.
+2026-04-28 01:34:50 - INFO - Preprocesamiento finalizado con éxito.
+2026-04-28 01:34:50 - INFO - Pipeline cargado exitosamente desde: clinical_xgboost_pipeline.pkl
+2026-04-28 01:34:50 - INFO - Iniciando el análisis SHAP...
+2026-04-28 01:37:39 - INFO - Análisis SHAP completado exitosamente

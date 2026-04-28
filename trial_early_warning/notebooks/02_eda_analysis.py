@@ -64,7 +64,7 @@ def run_eda_pipeline(data_path: str = "../data/raw/clinical_data_raw.csv"):
         num_cols = df.select_dtypes(include ='number').drop(columns = ['patient_id'], errors = 'ignore')
         correlation_matrix = num_cols.corr(method = 'pearson')
         sns.heatmap(
-            correlation_matrix,
+            data =correlation_matrix,
             annot = True, 
             cmap = 'coolwarm', 
             fmt = '.2f', 
@@ -74,7 +74,7 @@ def run_eda_pipeline(data_path: str = "../data/raw/clinical_data_raw.csv"):
         ax3.set_title('Mapa de correlación', fontsize = 12, fontweight='bold')
 
 
-        # Incidencias de SAE por brazo de tratamiento 
+        # Incidencias de SAE por tratamiento 
         sns.barplot(
             data = df, 
             x = 'treatment_arm', 

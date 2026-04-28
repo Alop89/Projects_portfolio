@@ -1,0 +1,7 @@
+2026-04-27 23:32:32 - INFO - Iniciando el pipeline de ingeniería de datos... ../../data/raw/clinical_data_raw.csv
+2026-04-27 23:32:32 - INFO - Dataframe de entrenamiento creado con éxito, registros: 2500
+2026-04-27 23:32:32 - INFO - Datos divididos con éxito, registros de entrenamiento: 2000
+2026-04-27 23:32:34 - INFO - Feature engineering (fit_transform) completado en entrenamiento
+2026-04-27 23:32:34 - INFO - VIF calculado correctamente
+2026-04-27 23:32:34 - INFO - Prueba VIF exitosa: Todas las variables tienen un VIF menor a 5.
+2026-04-27 23:32:34 - INFO - Preprocesamiento finalizado con éxito.

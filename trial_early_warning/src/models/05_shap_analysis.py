@@ -67,8 +67,13 @@ def run_shap_analysis(X_test, pipeline_final):
         raise
 
 
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'features')))
+
 if __name__ == "__main__":
     logging.info("Preparando datos y modelo para análisis SHAP...")
+    print("Preparando datos y modelo para análisis SHAP...")
     
     try:
         data_eng = __import__('03_data_engineering')
@@ -76,10 +81,13 @@ if __name__ == "__main__":
         model_path = 'clinical_xgboost_pipeline.pkl'
         pipeline_final = joblib.load(model_path)
         logging.info(f"Pipeline cargado exitosamente desde: {model_path}")
+        print("Pipeline cargado exitosamente. Generando gráficos SHAP...")
     
         run_shap_analysis(X_test, pipeline_final)
         
     except FileNotFoundError as e:
         logging.error(f"Archivo no encontrado: {e}. Asegúrate de ejecutar las fases previas.")
+        print(f"Archivo no encontrado: {e}. Asegúrate de ejecutar las fases previas.")
     except Exception as e:
         logging.error(f"Ocurrió un error al preparar el entorno SHAP: {e}")
+        print(f"Ocurrió un error al preparar el entorno SHAP: {e}")
