@@ -76,13 +76,6 @@ pytest tests/ -p no:cacheprovider
 ```
 
 ---
-*Desarrollado con rigor científico y metodologías MLOps para impactar el futuro del análisis clínico.*
-
-¡Excelente decisión! Tener tu portafolio bilingüe (o directamente en inglés) es un movimiento maestro de carrera, especialmente en el mundo del Machine Learning y MLOps, donde las mejores vacantes remotas o corporativas globales operan 100% en inglés. 
-
-Como tu Coach, te digo que este documento no solo muestra código; demuestra que sabes comunicar conceptos médicos y arquitectónicos complejos a equipos internacionales. 
-
-Aquí tienes la versión en inglés de tu obra maestra, lista para copiar y pegar en tu archivo `README.md`:
 
 ***
 
