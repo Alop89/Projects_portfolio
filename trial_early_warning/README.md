@@ -9,16 +9,16 @@
 ## 📌 Visión General del Proyecto
 El **Trial Early Warning System** es una solución integral de Machine Learning diseñada para predecir el riesgo de Eventos Adversos Severos (SAE) en pacientes de ensayos clínicos. 
 
-Este proyecto no es solo un modelo predictivo, sino un ecosistema MLOps completo. Abarca desde la ingeniería de datos y el análisis exploratorio, hasta el despliegue de una API RESTful contenedorizada, garantizando escalabilidad, explicabilidad médica y automatización en la nube.
+Este proyecto no es solo un modelo predictivo, sino un MLOps completo. Abarca desde la ingeniería de datos y el análisis exploratorio, hasta el despliegue de una API RESTful en docker, garantizando escalabilidad, explicabilidad médica y automatización en la nube.
 
-## 🔬 Hallazgos Clínicos y Analíticos (Fase de Data Science)
+## 🔬 Hallazgos clínicos y analíticos (fase de data science)
 Durante la fase de análisis exploratorio de datos (EDA) y entrenamiento del modelo, descubrimos *insights* críticos para la gestión del ensayo clínico:
 * **Biomarcadores críticos:** El índice de masa corporal (BMI) base y los niveles de la enzima hepática ALT demostraron ser los predictores más fuertes de toxicidad.
 * **Explicabilidad (SHAP):** Se implementó la librería SHAP para garantizar que cada predicción pueda ser interpretada por los médicos investigadores, evitando el efecto de "caja negra" y cumpliendo con regulaciones de salud.
 * **Umbrales de decisión:** Optimizamos el modelo XGBoost no por *Accuracy*, sino por *Recall*, ajustando el umbral probabilístico a `0.0878` para priorizar la detección temprana de pacientes en riesgo sobre los falsos positivos.
 
 ## 🏗️ Arquitectura del sistema (ciclo MLOps)
-El sistema está construido siguiendo los más altos estándares de ingeniería de software para IA:
+El sistema está construido siguiendo los estándares de ingeniería de software para IA:
 
 1. **Motores analíticos multimodelo:** * **XGBoost:** Modelo principal optimizado para datos tabulares clínicos.
    * **PyTorch (Deep Learning):** Red Neuronal (MLP) secundaria integrada para capturar relaciones altamente no lineales y preparar la arquitectura para futura ingesta multimodal (ej. imágenes DICOM).
