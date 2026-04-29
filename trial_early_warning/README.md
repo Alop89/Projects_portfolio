@@ -6,7 +6,7 @@
 [![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED.svg)](https://www.docker.com/)
 [![Terraform](https://img.shields.io/badge/Terraform-IaC-7B42BC.svg)](https://www.terraform.io/)
 
-## 📌 Visión General del Proyecto
+## 📌 Visión general del proyecto
 El **Trial Early Warning System** es una solución integral de Machine Learning diseñada para predecir el riesgo de Eventos Adversos Severos (SAE) en pacientes de ensayos clínicos. 
 
 Este proyecto no es solo un modelo predictivo, sino un MLOps completo. Abarca desde la ingeniería de datos y el análisis exploratorio, hasta el despliegue de una API RESTful en docker, garantizando escalabilidad, explicabilidad médica y automatización en la nube.
@@ -28,7 +28,7 @@ El sistema está construido siguiendo los estándares de ingeniería de software
 5. **Infraestructura y CI/CD:** * **Terraform:** Infraestructura como Código (IaC) para aprovisionamiento automatizado de servidores EC2 en AWS.
    * **GitHub Actions:** Pipeline de despliegue continuo que ejecuta pruebas y construye la imagen de Docker automáticamente en cada *push*.
 
-## 📂 Estructura del Repositorio
+## 📂 Estructura del repositorio
 ```text
 trial_early_warning/
 ├── .github/workflows/        # Pipelines de CI/CD (GitHub Actions)
@@ -44,9 +44,9 @@ trial_early_warning/
 └── README.md                 # Documentación del proyecto
 ```
 
-## 🚀 Guía de Ejecución
+## 🚀 Guía de ejecución
 
-### Opción 1: Ejecución Local (Desarrollo)
+### Opción 1: Ejecución Local (desarrollo)
 1. Clona el repositorio e instala las dependencias:
    ```bash
    pip install -r requirements.txt
@@ -58,7 +58,7 @@ trial_early_warning/
    ```
 3. Visita `http://127.0.0.1:8000/docs` para interactuar con Swagger UI.
 
-### Opción 2: Ejecución con Docker (Producción)
+### Opción 2: Ejecución con Docker (producción)
 1. Construye la imagen hermética:
    ```bash
    docker build -t clinical-oracle:v1 .
@@ -69,7 +69,7 @@ trial_early_warning/
    ```
 3. La API estará disponible en `http://localhost:8000/docs`.
 
-## 🧪 Ejecución de Pruebas (Auditoría)
+## 🧪 Ejecución de pruebas (auditoría)
 Para correr la suite de pruebas unitarias y asegurar la integridad del sistema:
 ```bash
 pytest tests/ -p no:cacheprovider
