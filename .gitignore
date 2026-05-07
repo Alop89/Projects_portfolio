@@ -3,12 +3,27 @@
 *.sqlite
 *.csv
 *.xlsx
-*.pkl
 *.pdf
 *.docx
 *.pbix
-*.env
-data/
+/postgres_data/
+
+# Ignorar archivos en data/, pero MANTENER la estructura de carpetas
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+
+# Modelos de Machine Learning y Logs
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.h5
+*.log
+models/
+
 
 # Entornos y Seguridad
 venv/
@@ -18,3 +33,4 @@ venv/
 # Notebooks y Python
 __pycache__/
 .ipynb_checkpoints/
+*.py[cod]

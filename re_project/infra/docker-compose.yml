@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: umbrella_db
+    restart: always
+    environment:
+      POSTGRES_USER: alfredo_admin
+      POSTGRES_PASSWORD: umbrella_secret
+      POSTGRES_DB: laboratorio_g
+    ports:
+      - "5432:5432"
+    volumes:
+      - ../postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+  
+  adminer:
+    image: adminer
+    container_name: umbrella_ui
+    restart: always
+    ports:
+      - "8080:8080"
