@@ -1,4 +1,4 @@
-# 🌌 ARCHDATA CONSULTING | PORTFOLIO 
+# 🌌 ARCHDATA CONSULTING | PORTFOLIO
 
 > **"Transformando el caos de datos en oro digital bajo la cuadrícula neón."**
 
@@ -16,10 +16,10 @@ Este proyecto utiliza el rigor estadístico para comparar dos variantes y determ
 
 ### 🚀 Resultados clave
 
-1.  **Validación de conversión:** Determinación exacta del incremento en la tasa de éxito entre variantes.
-2.  **Significancia estadística:** Aseguramos que los resultados no sean producto del azar (p-value \< 0.05) y tengan rigor estadístico para impulsar la toma de decisiones.
-3.  **Optimización de retención:** Identificación de patrones que reducen el abandono de usuarios.
-3. **Tablero dinámico:**Creación de tablero dinámico para visualizar los resultados más relevantes como: conversión de clientes, retención de usuarios, etc.
+1. **Validación de conversión:** Determinación exacta del incremento en la tasa de éxito entre variantes.
+2. **Significancia estadística:** Aseguramos que los resultados no sean producto del azar (p-value \< 0.05) y tengan rigor estadístico para impulsar la toma de decisiones.
+3. **Optimización de retención:** Identificación de patrones que reducen el abandono de usuarios.
+4. **Tablero dinámico:**Creación de tablero dinámico para visualizar los resultados más relevantes como: conversión de clientes, retención de usuarios, etc.
 
 🔗 **[VER PROYECTO A/B TESTING AQUÍ](https://github.com/Alop89/Projects_portfolio/tree/main/ab_test)**
 
@@ -33,16 +33,16 @@ El sector salud no permite errores. En este proyecto, elevamos el análisis de v
 
 Aplicamos herramientas de alto nivel para diseccionar la operación:
 
-  * **Correlación:** Entendemos qué variables realmente impulsan las ventas y que practica solo merman la utilidad.
-  * **Pruebas de comparación de medias:** Validamos diferencias reales de desempeño entre regiones o periodos, así validamos qué modelo de negocios o productos dan los mejores resultados.
-  * **Segmentación avanzada:** Clasificación de clientes y productos bajo la ley de Pareto (80/20) para priorizar esfuerzos, identificando productos de alta rotación y rentabilidad.
-  * **Análisis de abasto:** Modelado de demanda para evitar el "quiebre de stock" y el exceso de inventario.
+* **Correlación:** Entendemos qué variables realmente impulsan las ventas y que practica solo merman la utilidad.
+* **Pruebas de comparación de medias:** Validamos diferencias reales de desempeño entre regiones o periodos, así validamos qué modelo de negocios o productos dan los mejores resultados.
+* **Segmentación avanzada:** Clasificación de clientes y productos bajo la ley de Pareto (80/20) para priorizar esfuerzos, identificando productos de alta rotación y rentabilidad.
+* **Análisis de abasto:** Modelado de demanda para evitar el "quiebre de stock" y el exceso de inventario.
 
 ### 🚀 Resultados clave
 
-1.  **Detección de estacionalidad:** Mapa claro de cuándo y qué comprar para maximizar el flujo de efectivo.
-2.  **Ranking de rentabilidad:** Identificación de productos "estrella" vs productos "lastre".
-3.  **Eficiencia operativa:** Reducción del tiempo de respuesta en el suministro de dispositivos médicos para asegurar un correcto flujo de productos y evitar problemas de abasto.
+1. **Detección de estacionalidad:** Mapa claro de cuándo y qué comprar para maximizar el flujo de efectivo.
+2. **Ranking de rentabilidad:** Identificación de productos "estrella" vs productos "lastre".
+3. **Eficiencia operativa:** Reducción del tiempo de respuesta en el suministro de dispositivos médicos para asegurar un correcto flujo de productos y evitar problemas de abasto.
 4. **Tablero dinámico:**Creación de tablero dinámico para visualizar los resultados más importantes como: correlación entre métricas que impactan la venta, estacionalidad, rentabilidad, etc.
 
 🔗 **[VER PROYECTO MedTech AQUÍ](https://github.com/Alop89/Projects_portfolio/tree/main/inteligencia_comercial_medtech)**
@@ -59,10 +59,10 @@ Automatizar es eliminar el error humano y liberar el talento de tareas repetitiv
 
 ### 🛠️ El pipeline de datos
 
-1.  **Ingesta de datos:** Scripts en Python monitorean carpetas y APIs para detectar nueva información.
-2.  **Procesamiento (ETL):** Limpieza y transformación de datos crudos en información estructurada.
-3.  **Almacenamiento serverless:** Envío seguro de datos a la nube, optimizando el rendimiento y el costo.
-4.  **Visualización dinámica:** Alimentación en tiempo real a tableros interactivos que reflejan la realidad del negocio al segundo.
+1. **Ingesta de datos:** Scripts en Python monitorean carpetas y APIs para detectar nueva información.
+2. **Procesamiento (ETL):** Limpieza y transformación de datos crudos en información estructurada.
+3. **Almacenamiento serverless:** Envío seguro de datos a la nube, optimizando el rendimiento y el costo.
+4. **Visualización dinámica:** Alimentación en tiempo real a tableros interactivos que reflejan la realidad del negocio al segundo.
 
 🔗 **[VER PROYECTO DATA ENGINEERING AQUÍ](https://github.com/Alop89/Projects_portfolio/tree/main/ingenieria_automatizacion)**
 
@@ -76,13 +76,34 @@ Este proyecto transforma un modelo de Machine Learning tradicional en una herram
 
 ### 🚀 Resultados clave
 
-1.  **Preprocesamiento hermético (MLOps):** Construcción de un pipeline matemático libre de fugas de información (Zero Data Leakage) que garantiza la fiabilidad del modelo en el mundo real.
-2.  **Optimización de umbral (Recall):** Calibración estratégica de la métrica $F_2$ para erradicar los Falsos Negativos; ningún paciente en riesgo pasa desapercibido en el estudio.
-3.  **Explicabilidad médica (SHAP):** Auditoría del algoritmo mediante Teoría de Juegos de Shapley para justificar cada alerta, demostrando cómo variables como el brazo de tratamiento (Placebo) o los niveles de glucosa empujan la decisión del modelo.
-4.  **Aplicación web clínica:** Despliegue de una interfaz interactiva en Streamlit donde el personal de salud puede evaluar nuevos pacientes en tiempo real y visualizar el razonamiento de la IA al instante.
+1. **Preprocesamiento hermético (MLOps):** Construcción de un pipeline matemático libre de fugas de información (Zero Data Leakage) que garantiza la fiabilidad del modelo en el mundo real.
+2. **Optimización de umbral (Recall):** Calibración estratégica de la métrica $F_2$ para erradicar los Falsos Negativos; ningún paciente en riesgo pasa desapercibido en el estudio.
+3. **Explicabilidad médica (SHAP):** Auditoría del algoritmo mediante Teoría de Juegos de Shapley para justificar cada alerta, demostrando cómo variables como el brazo de tratamiento (Placebo) o los niveles de glucosa empujan la decisión del modelo.
+4. **Aplicación web clínica:** Despliegue de una interfaz interactiva en Streamlit donde el personal de salud puede evaluar nuevos pacientes en tiempo real y visualizar el razonamiento de la IA al instante.
 
 🔗 **[VER PROYECTO THE CLINICAL ORACLE AQUÍ](https://github.com/Alop89/Projects_portfolio/tree/main/clinical_oracle)**
 
+-----
+
+# ⚡ PROYECTO 5: Trial early warning system
+
+En los ensayos clínicos, la incertidumbre cuesta vidas y millones de dólares. Este sistema de MLOps de punta transforma datos complejos en alertas tempranas, prediciendo el riesgo de eventos adversos severos antes de que se conviertan en una crisis. No es solo un modelo; es una infraestructura de grado médico.
+
+### 🧠 Importancia y uso
+
+Este proyecto utiliza el rigor del Machine Learning para proteger la integridad de los pacientes en ensayos clínicos. Mediante una arquitectura escalable y automatizada, eliminamos el efecto de "caja negra" de la IA, permitiendo que los investigadores médicos comprendan y validen cada predicción bajo estándares regulatorios.
+
+### 🚀 Resultados clave
+
+1. **Identificación de biomarcadores:** Determinación del BMI y niveles de la enzima hepática ALT como los predictores críticos de toxicidad.
+
+2. **Optimización de seguridad (Recall):** Ajuste de precisión mediante un umbral de 0.0878, priorizando la detección de pacientes en riesgo sobre los falsos positivos.
+
+3. **Explicabilidad Total (SHAP):** Implementación de interpretación de modelos para que el equipo médico entienda el "porqué" detrás de cada alerta.
+
+4. **Arquitectura MLOps Robusta:** Ciclo completo con FastAPI, Docker y despliegue automatizado en AWS (Terraform + GitHub Actions).
+
+🔗 **[VER PROYECTO EARLY TRY WARNING SYSTEM AQUÍ](https://github.com/Alop89/Projects_portfolio/tree/main/trial_early_warning)**
 
 -----
 
@@ -90,17 +111,15 @@ Este proyecto transforma un modelo de Machine Learning tradicional en una herram
 
 ¿Listo para extraer el valor de tus datos?
 
-  * **LinkedIn:** [Analista de datos](https://www.linkedin.com/in/jose-alfredo-lopez-castro)
-  * **Email:** `archdata.consulting@gmail.com`
-  * **Web:** [ArchData Consulting](https://alop89.github.io/)
-  * **Instagram:** [archdata_bi](https://www.instagram.com/archdata_bi/)
+* **LinkedIn:** [Analista de datos](https://www.linkedin.com/in/jose-alfredo-lopez-castro)
+* **Email:** `archdata.consulting@gmail.com`
+* **Web:** [ArchData Consulting](https://alop89.github.io/)
+* **Instagram:** [archdata_bi](https://www.instagram.com/archdata_bi/)
 **"In code we trust, in data we thrive."**
 
 -----
 
----
-
-# 🌌 ARCHDATA CONSULTING | PORTFOLIO (ENG)                                                
+# 🌌 ARCHDATA CONSULTING | PORTFOLIO (ENG)
 
 > **"Transforming data chaos into digital gold under the neon grid."**
 
@@ -118,10 +137,10 @@ This project leverages statistical rigor to compare two variants and determine w
 
 ### 🚀 Key Results
 
-1.  **Conversion validation:** Exact determination of the increase in success rates between variants.
-2.  **Statistical significance:** Ensuring results are not due to chance ($p\text{-value} < 0.05$) and providing the statistical weight necessary to drive decision-making.
-3.  **Retention optimization:** Identification of patterns that reduce user churn.
-4.  **Dynamic dashboard:** Creation of a dynamic dashboard to visualize critical results such as customer conversion and user retention.
+1. **Conversion validation:** Exact determination of the increase in success rates between variants.
+2. **Statistical significance:** Ensuring results are not due to chance ($p\text{-value} < 0.05$) and providing the statistical weight necessary to drive decision-making.
+3. **Retention optimization:** Identification of patterns that reduce user churn.
+4. **Dynamic dashboard:** Creation of a dynamic dashboard to visualize critical results such as customer conversion and user retention.
 
 🔗 **[VIEW A/B TESTING PROJECT HERE](https://github.com/Alop89/Projects_portfolio/tree/main/ab_test)**
 
@@ -142,10 +161,10 @@ We apply high-level tools to dissect operations:
 
 ### 🚀 Key results
 
-1.  **Seasonality detection:** A clear map of when and what to buy to maximize cash flow.
-2.  **Profitability ranking:** Identification of "Star" products vs. "Laggard" products.
-3.  **Operational efficiency:** Reduction in response time for medical device supply to ensure correct product flow and avoid shortage issues.
-4.  **Dynamic dashboard:** Implementation of an interactive dashboard to monitor key metrics: correlation between sales drivers, seasonality, profitability, etc.
+1. **Seasonality detection:** A clear map of when and what to buy to maximize cash flow.
+2. **Profitability ranking:** Identification of "Star" products vs. "Laggard" products.
+3. **Operational efficiency:** Reduction in response time for medical device supply to ensure correct product flow and avoid shortage issues.
+4. **Dynamic dashboard:** Implementation of an interactive dashboard to monitor key metrics: correlation between sales drivers, seasonality, profitability, etc.
 
 🔗 **[VIEW MedTech PROJECT HERE](https://github.com/Alop89/Projects_portfolio/tree/main/inteligencia_comercial_medtech)**
 
@@ -161,10 +180,10 @@ Automating means eliminating human error and freeing up talent from repetitive t
 
 ### 🛠️ The Data Pipeline
 
-1.  **Data ingestion:** Python scripts monitor folders and APIs to detect new information.
-2.  **Processing (ETL):** Cleaning and transforming raw data into structured information.
-3.  **Serverless storage:** Securely sending data to the cloud, optimizing both performance and cost.
-4.  **Dynamic visualization:** Real-time data feeding into interactive dashboards that reflect business reality by the second.
+1. **Data ingestion:** Python scripts monitor folders and APIs to detect new information.
+2. **Processing (ETL):** Cleaning and transforming raw data into structured information.
+3. **Serverless storage:** Securely sending data to the cloud, optimizing both performance and cost.
+4. **Dynamic visualization:** Real-time data feeding into interactive dashboards that reflect business reality by the second.
 
 🔗 **[VIEW DATA ENGINEERING PROJECT HERE](https://github.com/Alop89/Projects_portfolio/tree/main/ingenieria_automatizacion)**
 
@@ -184,14 +203,32 @@ This project transforms a traditional Machine Learning model into a clinical dec
 
 ### 🚀 Key results
 
-1.  **Hermetic preprocessing (MLOps):** Construction of a mathematical pipeline completely free of data leakage, ensuring the model's reliability in a real-world setting.
-2.  **Threshold optimization (100% Recall):** Strategic calibration of the F2-Score metric to eradicate False Negatives; no at-risk patient goes unnoticed in the study.
-3.  **Medical explainability (SHAP):** Algorithm auditing using Shapley Game Theory to justify every alert, demonstrating how variables like the treatment arm (Placebo) or glucose levels drive the model's decision.
-4.  **Clinical web app:** Deployment of an interactive Streamlit interface where healthcare staff can evaluate new patients in real-time and visualize the AI's reasoning instantly.
+1. **Hermetic preprocessing (MLOps):** Construction of a mathematical pipeline completely free of data leakage, ensuring the model's reliability in a real-world setting.
+2. **Threshold optimization (100% Recall):** Strategic calibration of the F2-Score metric to eradicate False Negatives; no at-risk patient goes unnoticed in the study.
+3. **Medical explainability (SHAP):** Algorithm auditing using Shapley Game Theory to justify every alert, demonstrating how variables like the treatment arm (Placebo) or glucose levels drive the model's decision.
+4. **Clinical web app:** Deployment of an interactive Streamlit interface where healthcare staff can evaluate new patients in real-time and visualize the AI's reasoning instantly.
 
 🔗 **[VIEW THE CLINICAL ORACLE PROJECT HERE](https://github.com/Alop89/Projects_portfolio/tree/main/clinical_oracle)**
 
----
+-----
+
+## ⚡ PROJECT 5: Trial early warning system
+
+In clinical trials, uncertainty costs lives and millions of dollars. This cutting-edge MLOps system transforms complex data into early warnings, predicting the risk of Severe Adverse Events before they escalate into a crisis. It’s not just a model; it’s medical-grade infrastructure.
+
+### 🧠 Importance and Use
+
+This project leverages the rigor of Machine Learning to protect patient integrity in clinical trials. Through a scalable and automated architecture, we eliminate the AI "black box" effect, allowing medical researchers to understand and validate every prediction under regulatory standards.
+
+### 🚀 Key Results
+
+1. **Biomarker Identification:** Pinpointing baseline BMI and ALT liver enzyme levels as the strongest predictors of toxicity.
+2. **Safety Optimization (Recall):** Precision tuning with a 0.0878 threshold, prioritizing the detection of at-risk patients over false positives.
+3. **Full Explainability (SHAP):** Implementing model interpretation so the medical team understands the "why" behind every alert.
+4. **Robust MLOps Architecture:** End-to-end cycle featuring FastAPI, Docker, and automated deployment on AWS (Terraform + GitHub Actions).
+
+🔗 **[VIEW EARLY WARNING SYSTEM PROJECT HERE](https://github.com/Alop89/Projects_portfolio/tree/main/trial_early_warning)**
+-----
 
 ## 📟 OPEN CONNECTION
 
@@ -203,5 +240,3 @@ Ready to extract the value from your data?
 * **Instagram:** [archdata_bi](https://www.instagram.com/archdata_bi/)
 
 **"In code we trust, in data we thrive."**
-
----
