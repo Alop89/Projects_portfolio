@@ -222,10 +222,10 @@ This project leverages the rigor of Machine Learning to protect patient integrit
 
 ### 🚀 Key Results
 
-1. **Biomarker Identification:** Pinpointing baseline BMI and ALT liver enzyme levels as the strongest predictors of toxicity.
-2. **Safety Optimization (Recall):** Precision tuning with a 0.0878 threshold, prioritizing the detection of at-risk patients over false positives.
-3. **Full Explainability (SHAP):** Implementing model interpretation so the medical team understands the "why" behind every alert.
-4. **Robust MLOps Architecture:** End-to-end cycle featuring FastAPI, Docker, and automated deployment on AWS (Terraform + GitHub Actions).
+1. **Biomarker identification:** Pinpointing baseline BMI and ALT liver enzyme levels as the strongest predictors of toxicity.
+2. **Safety optimization (Recall):** Precision tuning with a 0.0878 threshold, prioritizing the detection of at-risk patients over false positives.
+3. **Full explainability (SHAP):** Implementing model interpretation so the medical team understands the "why" behind every alert.
+4. **Robust MLOps architecture:** End-to-end cycle featuring FastAPI, Docker, and automated deployment on AWS (Terraform + GitHub Actions).
 
 🔗 **[VIEW EARLY WARNING SYSTEM PROJECT HERE](https://github.com/Alop89/Projects_portfolio/tree/main/trial_early_warning)**
 -----
