@@ -49,7 +49,7 @@ Aplicamos herramientas de alto nivel para diseccionar la operación:
 
 -----
 
-## ⚙️ PROYECTO 3: The Grid (Ingeniería de datos & automatización)
+## ⚙️ PROYECTO 3: The Grid (ingeniería de datos & automatización)
 
 La verdadera inteligencia de negocios ocurre mientras el dueño duerme. Este proyecto representa la "plomería digital" de ArchData: sistemas que recolectan, limpian y procesan datos sin intervención humana.
 
@@ -66,7 +66,7 @@ Automatizar es eliminar el error humano y liberar el talento de tareas repetitiv
 
 🔗 **[VER PROYECTO DATA ENGINEERING AQUÍ](https://github.com/Alop89/Projects_portfolio/tree/main/ingenieria_automatizacion)**
 
-## 🧬 PROYECTO 4: The Clinical Oracle (predicción de riesgo y XAI)
+## 🧬 PROYECTO 4: The clinical oracle (predicción de riesgo y XAI)
 
 En la investigación médica, perder a un paciente durante un ensayo clínico cuesta millones de dólares e invalida meses de estudio. **The Clinical Oracle** es un sistema predictivo *end-to-end* diseñado para anticipar el abandono (Drop-out) de pacientes antes de que suceda.
 
@@ -131,11 +131,11 @@ This repository showcases the engineering behind **ArchData**, where we apply a 
 
 In a saturated market, hunches are expensive. **A/B Testing** is the scientific method applied to business growth, allowing us to validate changes in products or strategies through real statistical evidence.
 
-### 🧠 Importance and Usage
+### 🧠 Importance and usage
 
 This project leverages statistical rigor to compare two variants and determine which one best drives user behavior, eliminating subjective bias in the decision-making process.
 
-### 🚀 Key Results
+### 🚀 Key results
 
 1. **Conversion validation:** Exact determination of the increase in success rates between variants.
 2. **Statistical significance:** Ensuring results are not due to chance ($p\text{-value} < 0.05$) and providing the statistical weight necessary to drive decision-making.
@@ -146,7 +146,7 @@ This project leverages statistical rigor to compare two variants and determine w
 
 ---
 
-## 🏥 PROJECT 2: MedTech OPS (Strategic Analysis)
+## 🏥 PROJECT 2: MedTech OPS (strategic analysis)
 
 The healthcare sector leaves no room for error. In this project, we elevate sales analysis beyond simple averages, using statistics as a scalpel to find profit leaks and supply opportunities.
 
@@ -170,15 +170,15 @@ We apply high-level tools to dissect operations:
 
 ---
 
-## ⚙️ PROJECT 3: The Grid (Data Engineering & Automation)
+## ⚙️ PROJECT 3: The grid (data engineering & automation)
 
 True business intelligence happens while the owner sleeps. This project represents the "digital plumbing" of ArchData: systems that collect, clean, and process data without human intervention.
 
-### 🤖 The Power of Automation
+### 🤖 The power of automation
 
 Automating means eliminating human error and freeing up talent from repetitive tasks. By implementing **Serverless Databases (Neon DB)**, we guarantee an infrastructure that scales on demand, eliminating unnecessary fixed costs and ensuring 24/7 availability.
 
-### 🛠️ The Data Pipeline
+### 🛠️ The data pipeline
 
 1. **Data ingestion:** Python scripts monitor folders and APIs to detect new information.
 2. **Processing (ETL):** Cleaning and transforming raw data into structured information.
@@ -193,9 +193,9 @@ Aquí tienes la traducción precisa, manteniendo la fuerza del impacto de negoci
 
 ***
 
-## 🧬 PROJECT 4: The Clinical Oracle (Predictive Risk & XAI)
+## 🧬 PROJECT 4: The clinical oracle (predictive risk & XAI)
 
-In medical research, losing a patient during a clinical trial costs millions of dollars and invalidates months of study. **The Clinical Oracle** is an end-to-end predictive system designed to anticipate patient drop-out before it happens.
+In medical research, losing a patient during a clinical trial costs millions of dollars and invalidates months of study. **The clinical oracle** is an end-to-end predictive system designed to anticipate patient drop-out before it happens.
 
 ### 🧠 Importance and use
 
@@ -220,7 +220,7 @@ In clinical trials, uncertainty costs lives and millions of dollars. This cuttin
 
 This project leverages the rigor of Machine Learning to protect patient integrity in clinical trials. Through a scalable and automated architecture, we eliminate the AI "black box" effect, allowing medical researchers to understand and validate every prediction under regulatory standards.
 
-### 🚀 Key Results
+### 🚀 Key results
 
 1. **Biomarker identification:** Pinpointing baseline BMI and ALT liver enzyme levels as the strongest predictors of toxicity.
 2. **Safety optimization (Recall):** Precision tuning with a 0.0878 threshold, prioritizing the detection of at-risk patients over false positives.
