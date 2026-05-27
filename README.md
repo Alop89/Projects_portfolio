@@ -25,7 +25,7 @@ Este proyecto utiliza el rigor estadístico para comparar dos variantes y determ
 
 -----
 
-## 🏥 PROYECTO 2: MedTech OPS (análisis estratégico)
+## 🏥 PROYECTO 2: Inteligencia comercial medtech (análisis estratégico)
 
 El sector salud no permite errores. En este proyecto, elevamos el análisis de ventas más allá de los promedios simples, utilizando la estadística como un bisturí para encontrar fugas de rentabilidad y oportunidades de abasto.
 
