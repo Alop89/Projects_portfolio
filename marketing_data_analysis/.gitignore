@@ -6,7 +6,6 @@
 *.pkl
 *.pdf
 *.docx
-data/
 
 # Entornos y Seguridad
 venv/

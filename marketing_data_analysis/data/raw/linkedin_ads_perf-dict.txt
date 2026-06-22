@@ -1,0 +1,7 @@
+Nombre de Columna,Tipo de Dato,Descripción
+campaign_id,Text / VARCHAR,Identificador único de la campaña (llave primaria para el cruce).
+date,Date (YYYY-MM-DD),Fecha del desempeño diario registrado.
+impressions,Integer,Número de veces que el anuncio se mostró en el feed de LinkedIn.
+clicks,Integer,Número de clics recibidos en el anuncio.
+spend_usd,Float / Null,Dinero invertido en la campaña ese día (en USD). Contiene nulos simulados.
+conversions,Integer,"Acciones clave completadas (registros, descargas, etc.) gracias al anuncio."
