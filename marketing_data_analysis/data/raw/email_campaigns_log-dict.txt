@@ -1,7 +1,0 @@
-Nombre de Columna,Tipo de Dato,Descripción
-campaign_id,Text / VARCHAR,Identificador único de la campaña de marketing corporativo.
-date,Date (YYYY-MM-DD),Fecha del evento o del reporte diario.
-emails_sent,Integer,Total de correos electrónicos enviados en el día.
-emails_opened,Integer,Total de correos que fueron abiertos por los usuarios.
-emails_clicked,Integer,Total de usuarios que hicieron clic en algún enlace interno del correo.
-bounces,Integer / Null,Correos devueltos (no entregados). Contiene nulos simulados.
